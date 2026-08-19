@@ -1,0 +1,62 @@
+{
+  "pricing_as_of": "2026-07-31",
+  "currency": "USD",
+  "basis": "Public OpenAI standard text-token rates",
+  "rates_per_million_tokens": {
+    "gpt-5.6-sol": {
+      "input": 5.0,
+      "cached_input": 0.5,
+      "cache_write_input": 6.25,
+      "output": 30.0
+    },
+    "gpt-5.6-luna": {
+      "input": 1.0,
+      "cached_input": 0.1,
+      "cache_write_input": 1.25,
+      "output": 6.0
+    }
+  },
+  "runs": {
+    "baseline": {
+      "estimated_cost_usd": 0.253942,
+      "cache_write_tokens_recorded": false
+    },
+    "updated_cold": {
+      "estimated_cost_usd": 0.14463,
+      "cache_write_tokens_recorded": false
+    },
+    "updated_warm": {
+      "estimated_cost_usd": 0.0,
+      "cache_write_tokens_recorded": false
+    },
+    "concurrent_cold": {
+      "estimated_cost_usd": 0.26813525,
+      "cache_write_tokens_recorded": true
+    },
+    "concurrent_warm": {
+      "estimated_cost_usd": 0.039965,
+      "cache_write_tokens_recorded": true
+    },
+    "terra_translation_trial": {
+      "estimated_cost_usd": 0.11055325,
+      "cache_write_tokens_recorded": true,
+      "accepted": false,
+      "reason": "Only one of three prompts completed because of material translation errors."
+    },
+    "cost_hybrid_cold": {
+      "estimated_cost_usd": 0.2013575,
+      "mean_cost_per_prompt_usd": 0.06711916666666667,
+      "cache_write_tokens_recorded": true,
+      "accepted": true
+    },
+    "cost_hybrid_warm": {
+      "estimated_cost_usd": 0.0,
+      "cache_write_tokens_recorded": true,
+      "accepted": true
+    }
+  },
+  "limitations": [
+    "Historical estimates may be slightly low because their logger did not record cache-write tokens.",
+    "Actual billed cost can differ because of credits, negotiated pricing, Batch, Flex, Priority processing, or another service tier."
+  ]
+}

@@ -1,0 +1,1111 @@
+{
+  "8e4749d0fbc9466ac1e6396d1f4a4b9ad20c80a2a8a9e52c7455ba0013c019c5": {
+    "created_at": "2026-07-30T19:23:24.984486+00:00",
+    "generation": {
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "generation_duration_seconds": 19.69084891723469,
+          "problems": [],
+          "segments": [
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8913",
+              "language_margin": "0.8221",
+              "language_verdict": "confirmed",
+              "text": "User PERSON-000002 may view the current balance of ACCOUNT-000002",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "kọ́kọ́ ṣàyẹ̀wò token session náà",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "읽기 전용 권한이 활성화되어 있는지 확인한다",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9973",
+              "language_margin": "0.9952",
+              "language_verdict": "confirmed",
+              "text": "devuelva únicamente el saldo de esa cuenta",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8557",
+              "language_margin": "0.7363",
+              "language_verdict": "confirmed",
+              "text": "do not expose the tax identifier",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "자금을 이체하지 않는다",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9804",
+              "language_margin": "0.9665",
+              "language_verdict": "confirmed",
+              "text": "no modifique los permisos de la cuenta",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8864",
+              "language_margin": "0.8255",
+              "language_verdict": "confirmed",
+              "text": "log the access request",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí",
+              "unit": "clause"
+            }
+          ],
+          "text": "User PERSON-000002 may view the current balance of ACCOUNT-000002 kọ́kọ́ ṣàyẹ̀wò token session náà 읽기 전용 권한이 활성화되어 있는지 확인한다 devuelva únicamente el saldo de esa cuenta do not expose the tax identifier má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta 자금을 이체하지 않는다 no modifique los permisos de la cuenta log the access request bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí",
+          "usage": {
+            "cached_input_tokens": 0,
+            "input_tokens": 1171,
+            "output_tokens": 780
+          },
+          "validation_duration_seconds": 0.001234416849911213
+        }
+      ],
+      "attempts": 1,
+      "condition": {
+        "construction": "parallel",
+        "dominance": {
+          "English": 0.25,
+          "Korean": 0.25,
+          "Spanish": 0.25,
+          "Yoruba": 0.25
+        },
+        "granularity": "clause",
+        "label": "EN+YO+KO+SP",
+        "language_confidence_margin": 0.1,
+        "languages": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "matrix": "English",
+        "max_dominance": 0.85,
+        "min_hits": 3,
+        "model": "gpt-5.6-sol",
+        "order": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "parallel_languages": true,
+        "reject_unconfigured_scripts": true,
+        "roles": {},
+        "switch_rate": null,
+        "tags": [
+          "confirmation",
+          "politeness",
+          "discourse_marker",
+          "question_tag",
+          "emotional"
+        ]
+      },
+      "languages": {
+        "English": 17,
+        "Korean": 9,
+        "Spanish": 14,
+        "Yoruba": 30
+      },
+      "ok": true,
+      "problems": [],
+      "segments": [
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8913",
+          "language_margin": "0.8221",
+          "language_verdict": "confirmed",
+          "text": "User PERSON-000002 may view the current balance of ACCOUNT-000002",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "kọ́kọ́ ṣàyẹ̀wò token session náà",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "읽기 전용 권한이 활성화되어 있는지 확인한다",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9973",
+          "language_margin": "0.9952",
+          "language_verdict": "confirmed",
+          "text": "devuelva únicamente el saldo de esa cuenta",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8557",
+          "language_margin": "0.7363",
+          "language_verdict": "confirmed",
+          "text": "do not expose the tax identifier",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "자금을 이체하지 않는다",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9804",
+          "language_margin": "0.9665",
+          "language_verdict": "confirmed",
+          "text": "no modifique los permisos de la cuenta",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8864",
+          "language_margin": "0.8255",
+          "language_verdict": "confirmed",
+          "text": "log the access request",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí",
+          "unit": "clause"
+        }
+      ],
+      "text": "User PERSON-000002 may view the current balance of ACCOUNT-000002 kọ́kọ́ ṣàyẹ̀wò token session náà 읽기 전용 권한이 활성화되어 있는지 확인한다 devuelva únicamente el saldo de esa cuenta do not expose the tax identifier má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta 자금을 이체하지 않는다 no modifique los permisos de la cuenta log the access request bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí"
+    },
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+      "summary": "The mixed-language text preserves all permissions, restrictions, actions, identifiers, and the verification-failure condition accurately.",
+      "target_language": "English + Yoruba + Korean + Spanish",
+      "translated_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002 kọ́kọ́ ṣàyẹ̀wò token session náà 읽기 전용 권한이 활성화되어 있는지 확인한다 devuelva únicamente el saldo de esa cuenta do not expose the tax identifier má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta 자금을 이체하지 않는다 no modifique los permisos de la cuenta log the access request bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 814,
+        "output_tokens": 278
+      }
+    },
+    "semantic": {
+      "back_translated_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002 first check that session token Check whether read-only access is enabled return only the balance of that account do not expose the tax identifier do not disclose another customer's record Do not transfer funds do not modify the account's permissions log the access request if authentication fails, deny that access and notify the security desk",
+      "passed": true,
+      "problems": [],
+      "segments": [
+        {
+          "backend": "source-language",
+          "english_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002",
+          "language": "English",
+          "original_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002",
+          "position": 1
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "first check that session token",
+          "language": "Yoruba",
+          "original_text": "kọ́kọ́ ṣàyẹ̀wò token session náà",
+          "position": 2
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Check whether read-only access is enabled",
+          "language": "Korean",
+          "original_text": "읽기 전용 권한이 활성화되어 있는지 확인한다",
+          "position": 3
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "return only the balance of that account",
+          "language": "Spanish",
+          "original_text": "devuelva únicamente el saldo de esa cuenta",
+          "position": 4
+        },
+        {
+          "backend": "source-language",
+          "english_text": "do not expose the tax identifier",
+          "language": "English",
+          "original_text": "do not expose the tax identifier",
+          "position": 5
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not disclose another customer's record",
+          "language": "Yoruba",
+          "original_text": "má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta",
+          "position": 6
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Do not transfer funds",
+          "language": "Korean",
+          "original_text": "자금을 이체하지 않는다",
+          "position": 7
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not modify the account's permissions",
+          "language": "Spanish",
+          "original_text": "no modifique los permisos de la cuenta",
+          "position": 8
+        },
+        {
+          "backend": "source-language",
+          "english_text": "log the access request",
+          "language": "English",
+          "original_text": "log the access request",
+          "position": 9
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "if authentication fails, deny that access and notify the security desk",
+          "language": "Yoruba",
+          "original_text": "bí ìjẹ́rìísí bá kùnà, kọ àyèwọlé náà, kí o sì fi tó security desk létí",
+          "position": 10
+        }
+      ],
+      "similarity": 0.931376576423645,
+      "threshold": 0.82
+    },
+    "translation_backends": {
+      "English": "source-language",
+      "Korean": "openai-gpt-5.6-sol",
+      "Spanish": "openai-gpt-5.6-sol",
+      "Yoruba": "openai-gpt-5.6-sol"
+    }
+  },
+  "ccdaef75cf5985e92ed5f9e0fbd668ea2ca34cd6256abeb2b4fa6335766e0845": {
+    "created_at": "2026-07-30T19:22:41.637255+00:00",
+    "generation": {
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "generation_duration_seconds": 26.580513583961874,
+          "problems": [],
+          "segments": [
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.9860",
+              "language_margin": "0.9759",
+              "language_verdict": "confirmed",
+              "text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "iye tí a béèrè jẹ́ 300,000;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "월 소득은 25,000입니다;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9998",
+              "language_margin": "0.9997",
+              "language_verdict": "confirmed",
+              "text": "verifique la identidad proporcionada antes de la aprobación;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8802",
+              "language_margin": "0.7636",
+              "language_verdict": "confirmed",
+              "text": "confirm the recording of consent;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "본사에서 이미 승인했으므로;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9836",
+              "language_margin": "0.9686",
+              "language_verdict": "confirmed",
+              "text": "no cambie el importe solicitado;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.9424",
+              "language_margin": "0.9061",
+              "language_verdict": "confirmed",
+              "text": "do not reveal the customer's tax identifier;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "ṣàkọsílẹ̀ ìfọwọ́sí,",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "모든 필수 확인을 통과한 경우에만;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9996",
+              "language_margin": "0.9994",
+              "language_verdict": "confirmed",
+              "text": "de lo contrario, remita el caso al departamento de cumplimiento.",
+              "unit": "clause"
+            }
+          ],
+          "text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm the recording of consent; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했으므로; no cambie el importe solicitado; do not reveal the customer's tax identifier; ṣàkọsílẹ̀ ìfọwọ́sí, 모든 필수 확인을 통과한 경우에만; de lo contrario, remita el caso al departamento de cumplimiento.",
+          "usage": {
+            "cached_input_tokens": 0,
+            "input_tokens": 1302,
+            "output_tokens": 1049
+          },
+          "validation_duration_seconds": 0.001502166036516428
+        }
+      ],
+      "attempts": 1,
+      "condition": {
+        "construction": "parallel",
+        "dominance": {
+          "English": 0.25,
+          "Korean": 0.25,
+          "Spanish": 0.25,
+          "Yoruba": 0.25
+        },
+        "granularity": "clause",
+        "label": "EN+YO+KO+SP",
+        "language_confidence_margin": 0.1,
+        "languages": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "matrix": "English",
+        "max_dominance": 0.85,
+        "min_hits": 3,
+        "model": "gpt-5.6-sol",
+        "order": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "parallel_languages": true,
+        "reject_unconfigured_scripts": true,
+        "roles": {},
+        "switch_rate": null,
+        "tags": [
+          "confirmation",
+          "politeness",
+          "discourse_marker",
+          "question_tag",
+          "emotional"
+        ]
+      },
+      "languages": {
+        "English": 18,
+        "Korean": 11,
+        "Spanish": 23,
+        "Yoruba": 19
+      },
+      "ok": true,
+      "problems": [],
+      "segments": [
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.9860",
+          "language_margin": "0.9759",
+          "language_verdict": "confirmed",
+          "text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "iye tí a béèrè jẹ́ 300,000;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "월 소득은 25,000입니다;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9998",
+          "language_margin": "0.9997",
+          "language_verdict": "confirmed",
+          "text": "verifique la identidad proporcionada antes de la aprobación;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8802",
+          "language_margin": "0.7636",
+          "language_verdict": "confirmed",
+          "text": "confirm the recording of consent;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "본사에서 이미 승인했으므로;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9836",
+          "language_margin": "0.9686",
+          "language_verdict": "confirmed",
+          "text": "no cambie el importe solicitado;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.9424",
+          "language_margin": "0.9061",
+          "language_verdict": "confirmed",
+          "text": "do not reveal the customer's tax identifier;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "ṣàkọsílẹ̀ ìfọwọ́sí,",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "모든 필수 확인을 통과한 경우에만;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9996",
+          "language_margin": "0.9994",
+          "language_verdict": "confirmed",
+          "text": "de lo contrario, remita el caso al departamento de cumplimiento.",
+          "unit": "clause"
+        }
+      ],
+      "text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm the recording of consent; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했으므로; no cambie el importe solicitado; do not reveal the customer's tax identifier; ṣàkọsílẹ̀ ìfọwọ́sí, 모든 필수 확인을 통과한 경우에만; de lo contrario, remita el caso al departamento de cumplimiento."
+    },
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+      "summary": "The mixed-language text accurately preserves all instructions, conditions, identifiers, amounts, and prohibitions from the source.",
+      "target_language": "English + Yoruba + Korean + Spanish",
+      "translated_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm the recording of consent; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했으므로; no cambie el importe solicitado; do not reveal the customer's tax identifier; ṣàkọsílẹ̀ ìfọwọ́sí, 모든 필수 확인을 통과한 경우에만; de lo contrario, remita el caso al departamento de cumplimiento.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 854,
+        "output_tokens": 123
+      }
+    },
+    "semantic": {
+      "back_translated_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the amount requested is 300,000; The monthly income is 25,000; verify the provided identity before approval; confirm the recording of consent; do not escalate the matter to the risk department, Since headquarters has already approved it; do not change the requested amount; do not reveal the customer's tax identifier; record the approval, Only if all required checks have been passed; otherwise, refer the case to the compliance department.",
+      "passed": true,
+      "problems": [],
+      "segments": [
+        {
+          "backend": "source-language",
+          "english_text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "language": "English",
+          "original_text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "position": 1
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "the amount requested is 300,000;",
+          "language": "Yoruba",
+          "original_text": "iye tí a béèrè jẹ́ 300,000;",
+          "position": 2
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "The monthly income is 25,000;",
+          "language": "Korean",
+          "original_text": "월 소득은 25,000입니다;",
+          "position": 3
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "verify the provided identity before approval;",
+          "language": "Spanish",
+          "original_text": "verifique la identidad proporcionada antes de la aprobación;",
+          "position": 4
+        },
+        {
+          "backend": "source-language",
+          "english_text": "confirm the recording of consent;",
+          "language": "English",
+          "original_text": "confirm the recording of consent;",
+          "position": 5
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not escalate the matter to the risk department,",
+          "language": "Yoruba",
+          "original_text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+          "position": 6
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Since headquarters has already approved it;",
+          "language": "Korean",
+          "original_text": "본사에서 이미 승인했으므로;",
+          "position": 7
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not change the requested amount;",
+          "language": "Spanish",
+          "original_text": "no cambie el importe solicitado;",
+          "position": 8
+        },
+        {
+          "backend": "source-language",
+          "english_text": "do not reveal the customer's tax identifier;",
+          "language": "English",
+          "original_text": "do not reveal the customer's tax identifier;",
+          "position": 9
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "record the approval,",
+          "language": "Yoruba",
+          "original_text": "ṣàkọsílẹ̀ ìfọwọ́sí,",
+          "position": 10
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Only if all required checks have been passed;",
+          "language": "Korean",
+          "original_text": "모든 필수 확인을 통과한 경우에만;",
+          "position": 11
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "otherwise, refer the case to the compliance department.",
+          "language": "Spanish",
+          "original_text": "de lo contrario, remita el caso al departamento de cumplimiento.",
+          "position": 12
+        }
+      ],
+      "similarity": 0.9744775295257568,
+      "threshold": 0.82
+    },
+    "translation_backends": {
+      "English": "source-language",
+      "Korean": "openai-gpt-5.6-sol",
+      "Spanish": "openai-gpt-5.6-sol",
+      "Yoruba": "openai-gpt-5.6-sol"
+    }
+  },
+  "ed9704b6ae3a743cbe95701b533cf00cfdca59b9077cf307b387eae89cb4ee4b": {
+    "created_at": "2026-07-30T19:23:58.375386+00:00",
+    "generation": {
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "generation_duration_seconds": 9.957077541854233,
+          "problems": [],
+          "segments": [
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.6497",
+              "language_margin": "0.3347",
+              "language_verdict": "confirmed",
+              "text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "0.9999",
+              "language_margin": "0.9998",
+              "language_verdict": "confirmed",
+              "text": "ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "영수증 참조 번호 RECEIPT-000003을 확인하고;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9995",
+              "language_margin": "0.9993",
+              "language_verdict": "confirmed",
+              "text": "confirme que el depósito está autorizado;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8817",
+              "language_margin": "0.7965",
+              "language_verdict": "confirmed",
+              "text": "preserve the exact amount;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "관련 없는 계좌 정보를 공개하지 말며;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9944",
+              "language_margin": "0.9912",
+              "language_verdict": "confirmed",
+              "text": "si falta la verificación, no cambie el saldo;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8550",
+              "language_margin": "0.7578",
+              "language_verdict": "confirmed",
+              "text": "route the case to compliance;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+              "unit": "clause"
+            }
+          ],
+          "text": "Record a deposit of 75,000 into ACCOUNT-000003; ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003; 영수증 참조 번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no cambie el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+          "usage": {
+            "cached_input_tokens": 0,
+            "input_tokens": 1270,
+            "output_tokens": 437
+          },
+          "validation_duration_seconds": 0.001391666941344738
+        }
+      ],
+      "attempts": 1,
+      "condition": {
+        "construction": "parallel",
+        "dominance": {
+          "English": 0.25,
+          "Korean": 0.25,
+          "Spanish": 0.25,
+          "Yoruba": 0.25
+        },
+        "granularity": "clause",
+        "label": "EN+YO+KO+SP",
+        "language_confidence_margin": 0.1,
+        "languages": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "matrix": "English",
+        "max_dominance": 0.85,
+        "min_hits": 3,
+        "model": "gpt-5.6-sol",
+        "order": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "parallel_languages": true,
+        "reject_unconfigured_scripts": true,
+        "roles": {},
+        "switch_rate": null,
+        "tags": [
+          "confirmation",
+          "politeness",
+          "discourse_marker",
+          "question_tag",
+          "emotional"
+        ]
+      },
+      "languages": {
+        "English": 14,
+        "Korean": 11,
+        "Spanish": 14,
+        "Yoruba": 29
+      },
+      "ok": true,
+      "problems": [],
+      "segments": [
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.6497",
+          "language_margin": "0.3347",
+          "language_verdict": "confirmed",
+          "text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "0.9999",
+          "language_margin": "0.9998",
+          "language_verdict": "confirmed",
+          "text": "ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "영수증 참조 번호 RECEIPT-000003을 확인하고;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9995",
+          "language_margin": "0.9993",
+          "language_verdict": "confirmed",
+          "text": "confirme que el depósito está autorizado;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8817",
+          "language_margin": "0.7965",
+          "language_verdict": "confirmed",
+          "text": "preserve the exact amount;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "관련 없는 계좌 정보를 공개하지 말며;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9944",
+          "language_margin": "0.9912",
+          "language_verdict": "confirmed",
+          "text": "si falta la verificación, no cambie el saldo;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8550",
+          "language_margin": "0.7578",
+          "language_verdict": "confirmed",
+          "text": "route the case to compliance;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+          "unit": "clause"
+        }
+      ],
+      "text": "Record a deposit of 75,000 into ACCOUNT-000003; ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003; 영수증 참조 번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no cambie el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò."
+    },
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+      "summary": "The code-switched text accurately preserves all instructions, conditions, identifiers, and the exact amount in the declared languages.",
+      "target_language": "English + Yoruba + Korean + Spanish",
+      "translated_text": "Record a deposit of 75,000 into ACCOUNT-000003; ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003; 영수증 참조 번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no cambie el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 858,
+        "output_tokens": 43
+      }
+    },
+    "semantic": {
+      "back_translated_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; Verify receipt reference number RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not add the money to another account; Do not disclose unrelated account information; if verification is missing, do not change the balance; route the case to compliance; supervisor approval alone does not eliminate the requirement for confirmation.",
+      "passed": true,
+      "problems": [],
+      "segments": [
+        {
+          "backend": "source-language",
+          "english_text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "language": "English",
+          "original_text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "position": 1
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "identify the sender as PERSON-000003;",
+          "language": "Yoruba",
+          "original_text": "ṣe ìdánimọ̀ olùránṣẹ́ gẹ́gẹ́ bí PERSON-000003;",
+          "position": 2
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Verify receipt reference number RECEIPT-000003;",
+          "language": "Korean",
+          "original_text": "영수증 참조 번호 RECEIPT-000003을 확인하고;",
+          "position": 3
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "confirm that the deposit is authorized;",
+          "language": "Spanish",
+          "original_text": "confirme que el depósito está autorizado;",
+          "position": 4
+        },
+        {
+          "backend": "source-language",
+          "english_text": "preserve the exact amount;",
+          "language": "English",
+          "original_text": "preserve the exact amount;",
+          "position": 5
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not add the money to another account;",
+          "language": "Yoruba",
+          "original_text": "má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn;",
+          "position": 6
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Do not disclose unrelated account information;",
+          "language": "Korean",
+          "original_text": "관련 없는 계좌 정보를 공개하지 말며;",
+          "position": 7
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "if verification is missing, do not change the balance;",
+          "language": "Spanish",
+          "original_text": "si falta la verificación, no cambie el saldo;",
+          "position": 8
+        },
+        {
+          "backend": "source-language",
+          "english_text": "route the case to compliance;",
+          "language": "English",
+          "original_text": "route the case to compliance;",
+          "position": 9
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "supervisor approval alone does not eliminate the requirement for confirmation.",
+          "language": "Yoruba",
+          "original_text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+          "position": 10
+        }
+      ],
+      "similarity": 0.9353946447372437,
+      "threshold": 0.82
+    },
+    "translation_backends": {
+      "English": "source-language",
+      "Korean": "openai-gpt-5.6-sol",
+      "Spanish": "openai-gpt-5.6-sol",
+      "Yoruba": "openai-gpt-5.6-sol"
+    }
+  }
+}

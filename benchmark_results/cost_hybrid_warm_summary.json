@@ -1,0 +1,24 @@
+{
+  "total_model_calls": 0,
+  "calls_by_stage": {},
+  "total_runtime_seconds": 0.3274304592050612,
+  "runtime_by_stage_seconds": {},
+  "average_mix_time_seconds": null,
+  "average_mix_generation_seconds": null,
+  "average_mix_validation_seconds": null,
+  "average_attempts_per_mix": null,
+  "structurally_valid_output_rate": 1.0,
+  "machine_review_pass_rate": 1.0,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "estimated_standard_api_cost_usd": 0,
+  "pricing_as_of": "2026-07-31",
+  "pricing_basis": "Public standard text-token rates; excludes account credits, negotiated pricing, and non-standard service tiers.",
+  "estimated_api_cost_reason": null,
+  "failure_causes": {},
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

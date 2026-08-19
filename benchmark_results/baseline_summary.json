@@ -1,0 +1,37 @@
+{
+  "total_model_calls": 33,
+  "calls_by_stage": {
+    "translate": 9,
+    "translation_review": 9,
+    "mix_generation": 3,
+    "back_translation": 9,
+    "code_switch_review": 3
+  },
+  "total_runtime_seconds": 195.35283920867369,
+  "runtime_by_stage_seconds": {
+    "translate": 59.33893941389397,
+    "translation_review": 30.489409918896854,
+    "mix_generation": 54.17554762493819,
+    "back_translation": 11.586265957914293,
+    "code_switch_review": 20.44863562565297,
+    "language_annotation": 0.025376707315444946,
+    "mix_validation": 0.010803833603858948,
+    "mix_total": 54.21631645737216
+  },
+  "average_mix_time_seconds": 18.07210548579072,
+  "average_mix_generation_seconds": 18.058515874979395,
+  "average_mix_validation_seconds": 0.0036012778679529824,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 1.0,
+  "machine_review_pass_rate": 1.0,
+  "total_input_tokens": 17552,
+  "total_output_tokens": 6101,
+  "estimated_api_cost": null,
+  "estimated_api_cost_reason": "pricing unavailable for these model identifiers",
+  "failure_causes": {},
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

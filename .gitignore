@@ -1,0 +1,27 @@
+.DS_Store
+.venv*/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+/.model-cache/
+.env
+.env.*
+!.env.example
+
+# Generated local research data. Raw traces can contain evaluation inputs.
+/artifacts/*/raw/
+/artifacts/*/authoring-cache.json
+/artifacts/*/stimuli.jsonl
+/vendor/FinVault/
+/csrt/
+/tmp/
+/data/upstream/
+/logs/
+/runs/*
+!/runs/README.md
+/.omx/
+scenarios/**/*.local.jsonl
+scenarios/**/.authoring-cache.json
+legacy/**/raw/

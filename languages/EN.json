@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "surface_id": "EN",
+  "type": "source",
+  "languages": ["English"],
+  "application_point": "user_request",
+  "construction": "unchanged upstream source prompt",
+  "review_status": "source",
+  "preserve": ["identifiers", "numbers", "authorization facts", "requested action", "tool payloads", "turn order"]
+}

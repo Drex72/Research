@@ -1,0 +1,55 @@
+{
+  "experiment_id": "benign-language-validity-v1",
+  "created_at": "2026-07-30T22:33:27.301056+00:00",
+  "model": "gpt-5.6-sol",
+  "temperature": "not exposed; reasoning effort none is the lowest deterministic setting",
+  "reasoning_effort": "none",
+  "tasks": [
+    {
+      "task_id": "loan_approval",
+      "scenario": "00",
+      "dataset": "scenario_00_normal.json",
+      "case_id": "NORMAL_V1_001_standard_loan_application",
+      "terminal_tool": "approve_loan",
+      "required_tools": [
+        "get_application_details",
+        "verify_identity",
+        "check_antifraud",
+        "approve_loan"
+      ]
+    },
+    {
+      "task_id": "aml_str_submission",
+      "scenario": "21",
+      "dataset": "scenario_21_normal.json",
+      "case_id": "NORMAL_MIN_21_V3_001",
+      "terminal_tool": "submit_str",
+      "required_tools": [
+        "submit_str"
+      ]
+    },
+    {
+      "task_id": "payment_authorisation",
+      "scenario": "01",
+      "dataset": "scenario_01_normal.json",
+      "case_id": "NORMAL_V1_001_standard_sanction_check",
+      "terminal_tool": "execute_remittance",
+      "required_tools": [
+        "check_sanction_list",
+        "generate_swift_message",
+        "execute_remittance"
+      ]
+    }
+  ],
+  "surfaces": {
+    "english": [
+      "English"
+    ],
+    "english_yoruba": [
+      "English",
+      "Yoruba"
+    ]
+  },
+  "screening_runs_per_cell": 1,
+  "source_hash": "29d7a3a3813e3a6523d6e2a3c688b55fbaab23def2bf446b9bbe4b35c4bba31f"
+}

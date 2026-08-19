@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "_note": "How each language is recognised in a piece of text. A language counts as present when its detectors fire at least min_hits times, which the surface sets. Scripts are inclusive hex codepoint ranges. chars are diagnostic single characters, normally diacritics another configured language lacks. markers are whole words matched case-insensitively. Add a language by adding an entry here; no code changes.",
+  "languages": {
+    "English": {
+      "resource_tier": "high",
+      "markers": [
+        "the", "and", "please", "would", "with", "your", "account", "request",
+        "approve", "amount", "customer", "loan", "verify", "review", "this",
+        "that", "from", "have", "need", "should", "thank", "regarding", "for"
+      ]
+    },
+    "Korean": {
+      "resource_tier": "mid",
+      "scripts": [["AC00", "D7A3"], ["1100", "11FF"], ["3130", "318F"], ["A960", "A97F"]]
+    },
+    "Yoruba": {
+      "resource_tier": "low",
+      "chars": "ẹọṣńṅàáèéìíòóùúẹ́ẹ̀ọ́ọ̀",
+      "markers": [
+        "jọwọ", "jọ̀wọ́", "àti", "ati", "tí", "ni", "níní", "wọn", "wọ́n",
+        "yìí", "náà", "kí", "ṣé", "ṣe", "owó", "àkọọlẹ", "ìbéèrè", "ọgbẹni",
+        "ọ̀gbẹ́ni", "fún", "fun", "látì", "ló", "nítorí", "bẹẹni", "ẹ̀yin",
+        "gbà", "mú", "sí", "wa", "yóò", "kò", "má"
+      ]
+    },
+    "Spanish": {
+      "resource_tier": "high",
+      "chars": "ñ¿¡",
+      "markers": [
+        "el", "la", "los", "las", "de", "del", "que", "por", "para", "con",
+        "una", "un", "solicitud", "cuenta", "cliente", "monto", "préstamo",
+        "prestamo", "aprobar", "verificar", "revisar", "gracias", "favor",
+        "necesito", "puede", "está", "esta", "este", "sus", "según", "segun"
+      ]
+    },
+    "Swahili": {
+      "resource_tier": "low",
+      "markers": [
+        "na", "ya", "wa", "kwa", "ni", "katika", "tafadhali", "akaunti",
+        "mteja", "kiasi", "ombi", "asante", "hii", "hiyo", "kwamba", "lakini",
+        "idhinisha", "thibitisha", "pesa", "mkopo"
+      ]
+    },
+    "Hausa": {
+      "resource_tier": "low",
+      "chars": "ɓɗƙƴ",
+      "markers": [
+        "da", "na", "ta", "ga", "don", "kuma", "asusun", "abokin", "adadin",
+        "buƙata", "bukata", "nagode", "wannan", "amma", "amincewa", "tabbatar"
+      ]
+    },
+    "Chinese": {
+      "resource_tier": "high",
+      "scripts": [["4E00", "9FFF"], ["3400", "4DBF"], ["F900", "FAFF"]]
+    },
+    "Vietnamese": {
+      "resource_tier": "mid",
+      "chars": "ăâđêôơưảạằắẳẵặầấẩẫậềếểễệồốổỗộờớởỡợừứửữựỳýỷỹỵ",
+      "markers": [
+        "và", "của", "cho", "vui", "lòng", "tài", "khoản", "khách", "hàng",
+        "số", "tiền", "yêu", "cầu", "cảm", "ơn", "này", "được", "duyệt"
+      ]
+    },
+    "Thai": {
+      "resource_tier": "mid",
+      "scripts": [["0E00", "0E7F"]]
+    },
+    "Arabic": {
+      "resource_tier": "mid",
+      "scripts": [["0600", "06FF"], ["0750", "077F"], ["FB50", "FDFF"], ["FE70", "FEFF"]]
+    },
+    "Bengali": {
+      "resource_tier": "low",
+      "scripts": [["0980", "09FF"]]
+    },
+    "Javanese": {
+      "resource_tier": "low",
+      "markers": [
+        "lan", "kang", "ing", "saka", "kanggo", "rekening", "nasabah",
+        "jumlah", "panyuwunan", "matur", "nuwun", "iki", "ora", "supaya"
+      ]
+    },
+    "Italian": {
+      "resource_tier": "high",
+      "chars": "àèéìòù",
+      "markers": [
+        "il", "lo", "gli", "che", "per", "con", "una", "conto", "cliente",
+        "importo", "richiesta", "grazie", "prego", "verificare", "approvare"
+      ]
+    }
+  }
+}

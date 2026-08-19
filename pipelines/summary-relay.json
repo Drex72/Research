@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "pipeline_id": "summary-relay",
+  "use_case_officer": true,
+  "include_original": false,
+  "handoff": "officer_record"
+}

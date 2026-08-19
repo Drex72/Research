@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "pipeline_id": "single",
+  "use_case_officer": false,
+  "include_original": true,
+  "handoff": "none"
+}

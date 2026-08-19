@@ -1,0 +1,41 @@
+{
+  "total_model_calls": 30,
+  "calls_by_stage": {
+    "translate": 9,
+    "translation_review": 9,
+    "mix_generation": 3,
+    "code_switch_review": 3,
+    "back_translation": 6
+  },
+  "total_runtime_seconds": 165.45903954096138,
+  "runtime_by_stage_seconds": {
+    "translate": 74.27947833482176,
+    "translation_review": 34.19746120786294,
+    "mix_generation": 55.857752540148795,
+    "code_switch_review": 26.453572250902653,
+    "back_translation": 8.398917417041957,
+    "language_annotation": 0.04558358388021588,
+    "mix_validation": 0.004720123950392008,
+    "mix_total": 55.910425250418484
+  },
+  "average_mix_time_seconds": 18.63680841680616,
+  "average_mix_generation_seconds": 18.619250846716266,
+  "average_mix_validation_seconds": 0.0015733746501306693,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 1.0,
+  "machine_review_pass_rate": 0.6666666666666666,
+  "total_input_tokens": 16856,
+  "total_output_tokens": 6352,
+  "estimated_standard_api_cost_usd": 0.26813525,
+  "pricing_as_of": "2026-07-31",
+  "pricing_basis": "Public standard text-token rates; excludes account credits, negotiated pricing, and non-standard service tiers.",
+  "estimated_api_cost_reason": null,
+  "failure_causes": {
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe translation largely preserves the controls and conditions, but “security desk” is changed to “departamento de seguridad” (security department), altering the party that must be notified.\n\nIssues:\n[MAJOR] actor_action\nThe required notification recipient is changed from the security desk to the broader security department.\n\nSuggested fix: Use “notifique a la mesa de seguridad.”\n\nSuggested correction:\nUser PERSON-000002 may view the current balance of ACCOUNT-000002; kọ́kọ́ jẹ́rìí àmì ìdánimọ̀ sáà náà; 읽기 전용 권한이 활성화되어 있는지 확인하십시오; devuelva únicamente el saldo de esa cuenta; do not expose the tax identifier; má ṣe ṣí àwọn àkọsílẹ̀ oníbàárà mìíràn payá; 자금을 이체하지 마십시오; no modifique los permisos de la cuenta; log the access request; bí ìjẹ́rìísí bá kùnà, 접근을 거부하고 notifique a la mesa de seguridad.": 1
+  },
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

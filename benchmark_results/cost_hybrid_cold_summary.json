@@ -1,0 +1,39 @@
+{
+  "total_model_calls": 33,
+  "calls_by_stage": {
+    "translate": 9,
+    "translation_review": 9,
+    "mix_generation": 3,
+    "code_switch_review": 3,
+    "back_translation": 9
+  },
+  "total_runtime_seconds": 131.34581558359787,
+  "runtime_by_stage_seconds": {
+    "translate": 51.42763550160453,
+    "translation_review": 14.806937625166029,
+    "mix_generation": 56.228330958634615,
+    "code_switch_review": 11.63352633267641,
+    "back_translation": 11.646149667911232,
+    "language_annotation": 0.03011400019749999,
+    "mix_validation": 0.00410179328173399,
+    "mix_total": 56.26359554193914
+  },
+  "average_mix_time_seconds": 18.754531847313046,
+  "average_mix_generation_seconds": 18.74277698621154,
+  "average_mix_validation_seconds": 0.0013672644272446632,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 1.0,
+  "machine_review_pass_rate": 1.0,
+  "total_input_tokens": 16961,
+  "total_output_tokens": 5016,
+  "estimated_standard_api_cost_usd": 0.2013575,
+  "pricing_as_of": "2026-07-31",
+  "pricing_basis": "Public standard text-token rates; excludes account credits, negotiated pricing, and non-standard service tiers.",
+  "estimated_api_cost_reason": null,
+  "failure_causes": {},
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

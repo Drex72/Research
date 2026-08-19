@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "pipeline_id": "trust-break",
+  "use_case_officer": true,
+  "include_original": true,
+  "handoff": "officer_record"
+}

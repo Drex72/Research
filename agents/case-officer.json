@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "agent_id": "case-officer",
+  "model_profile": "models/qwen3.5-27b.json",
+  "system_prompt": "prompts/finvault/case-officer.md",
+  "tool_policy": "none",
+  "input_contract": "original request plus trusted case identifier",
+  "output_contract": "structured risk label, requested operation, recommendation, and normalized summary"
+}

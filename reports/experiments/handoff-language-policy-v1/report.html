@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handoff Language Policy v1</title>
+  <style>
+    :root { --ink:#172033; --muted:#61708a; --line:#dbe2ea; --paper:#fff; --wash:#f4f7fa; --accent:#3159a7; --warn:#8a5a00; --warn-bg:#fff4d6; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--wash); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1050px,calc(100% - 32px)); margin:32px auto; padding:40px; background:var(--paper); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 36px rgb(23 32 51 / 8%); }
+    h1,h2 { line-height:1.2; } h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3rem); } h2 { margin-top:34px; font-size:1.25rem; }
+    .muted { color:var(--muted); } .status { display:inline-block; margin:16px 0 24px; padding:7px 12px; color:var(--warn); background:var(--warn-bg); border-radius:999px; font-weight:700; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; }
+    .card,.flow { padding:18px; background:var(--wash); border:1px solid var(--line); border-radius:12px; }
+    .card strong { display:block; color:var(--accent); font-size:1.7rem; }
+    .flow { text-align:center; font-weight:700; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; } th,td { padding:11px 12px; text-align:left; border-bottom:1px solid var(--line); } th { background:var(--wash); }
+    code { background:var(--wash); padding:2px 5px; border-radius:4px; } a { color:var(--accent); }
+    @media(max-width:640px){ main { margin:0; width:100%; padding:24px 18px; border-radius:0; } table { display:block; overflow-x:auto; } }
+  </style>
+</head>
+<body><main>
+  <p class="muted">CSRT High-Risk Agent Research · 14 August 2026</p>
+  <h1>Handoff Language Policy v1</h1>
+  <p class="muted">Does forcing the internal handoff to remain multilingual change the downstream safety decision?</p>
+  <span class="status">Inconclusive: API credits exhausted before generation</span>
+
+  <div class="cards">
+    <div class="card"><strong>8</strong>new cells attempted</div>
+    <div class="card"><strong>0</strong>evaluable new cells</div>
+    <div class="card"><strong>6</strong>existing baseline cells</div>
+    <div class="card"><strong>0</strong>research outcomes observed</div>
+  </div>
+
+  <h2>What this comparison tests</h2>
+  <div class="flow">Matched original request → Agent 1 handoff policy → Agent 2 decision</div>
+  <p>
+    The original experiment normalized every intake into English. This ablation
+    keeps the same tasks, model, schemas, and downstream instructions, but tells
+    Agent 1 to produce either an English-Korean or English-Yoruba handoff.
+    This isolates the handoff language policy from the input language surface.
+  </p>
+
+  <h2>Frozen matrix</h2>
+  <table>
+    <thead><tr><th>Track</th><th>Input surfaces</th><th>Handoff policies compared</th><th>Tasks</th></tr></thead>
+    <tbody>
+      <tr><td>English-Korean</td><td>English, English-Korean</td><td>English-only, English-Korean</td><td>2</td></tr>
+      <tr><td>English-Yoruba</td><td>English, English-Yoruba</td><td>English-only, English-Yoruba</td><td>2</td></tr>
+    </tbody>
+  </table>
+  <p>Eight new model-run cells are required. The matching English-only cells are reused from the completed handoff experiment rather than rerun.</p>
+
+  <h2>Attempt 1</h2>
+  <table>
+    <thead><tr><th>Stage</th><th>Result</th><th>How it is counted</th></tr></thead>
+    <tbody>
+      <tr><td>Agent 1 intake</td><td>API returned insufficient quota for all 8 cells</td><td>Infrastructure error</td></tr>
+      <tr><td>Agent 2 decision</td><td>Not reached</td><td>Not a refusal and not a safe outcome</td></tr>
+      <tr><td>Comparison</td><td>Not possible</td><td>Inconclusive</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Resume condition</h2>
+  <p>
+    Restore API credits, then run
+    <code>.venv/bin/python experiments/handoff_language_policy.py</code>.
+    Failed attempts are archived, and successful cells will be retained on later resumes.
+  </p>
+</main></body>
+</html>

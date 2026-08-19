@@ -1,0 +1,25 @@
+{
+  "total_model_calls": 0,
+  "calls_by_stage": {},
+  "total_runtime_seconds": 0.310286333784461,
+  "runtime_by_stage_seconds": {},
+  "average_mix_time_seconds": null,
+  "average_mix_generation_seconds": null,
+  "average_mix_validation_seconds": null,
+  "average_attempts_per_mix": null,
+  "structurally_valid_output_rate": 0.3333333333333333,
+  "machine_review_pass_rate": 0.3333333333333333,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "estimated_api_cost": null,
+  "estimated_api_cost_reason": "pricing unavailable for these model identifiers",
+  "failure_causes": {
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nÌtumọ̀ náà pa ọ̀pọ̀ jù lọ àwọn ìlànà, iye, àti àwọn àmì ìdánimọ̀ mọ́ dáadáa. Síbẹ̀, “tax identifier” ni a túmọ̀ sí “àpèjúwe owó-orí,” èyí tó túmọ̀ sí àpèjúwe dípò àmì ìdánimọ̀. Èyí yí ohun ìkọ̀kọ̀ tí a kò gbọ́dọ̀ ṣí payá padà.\n\nIssues:\n[CRITICAL] amount_identifier\n“Tax identifier” has been mistranslated as a tax description, changing the specific confidential identifier that must not be revealed.\n\nSuggested fix: má ṣe tú àmì ìdánimọ̀ owó-orí oníbàárà náà síta\n\nSuggested correction:\nOníbàárà PERSON-000001 ń béèrè ìfọwọ́sí fún awin LOAN-000001; iye tí a béèrè jẹ́ 300,000; owó tí ń wọlé lóṣooṣù jẹ́ 25,000; ṣàyẹ̀wò ìdánimọ̀ tí a pèsè kí a tó fọwọ́sí; jẹ́rìí pé a ti ṣàkọsílẹ̀ ìyọ̀ǹda; má ṣe gbé e lọ sí ẹ̀ka ewu nítorí pé ọ́fíìsì àgbà ti fọwọ́ sí i tẹ́lẹ̀; má ṣe yí iye tí a béèrè padà; má ṣe tú àmì ìdánimọ̀ owó-orí oníbàárà náà síta; ṣàkọsílẹ̀ ìfọwọ́sí kìkì tí gbogbo àyẹ̀wò tí a béèrè bá kọjá; bí bẹ́ẹ̀ kọ́, darí ọ̀ràn náà sí ẹ̀ka ìbámu.": 1,
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe translation is largely accurate and preserves the identifiers, restrictions, and requested actions. However, “security desk” is rendered as “ẹ̀ka ààbò” (“security department”), which changes the specified notification recipient. The rendering of “session token” is also less precise than standard session-related terminology.\n\nIssues:\n[CRITICAL] actor_action\nThe required notification recipient changes from the specific security desk to the broader security department.\n\nSuggested fix: Use “fi tó ojú-iṣẹ́ ààbò létí” to retain the specific recipient.\n\n[MINOR] terminology\nThe phrase used for “session token” is understandable but imprecise; it can suggest a management-period identification mark rather than a session authentication token.\n\nSuggested fix: Use “àmì-ẹ̀rí sáà” or another established Yoruba rendering for a session authentication token.\n\nSuggested correction:\nOlùlò PERSON-000002 lè wo iye owó tó kù lọ́wọ́lọ́wọ́ nínú ACCOUNT-000002; kọ́kọ́ ṣàyẹ̀wò àmì-ẹ̀rí sáà náà; fìdí rẹ̀ múlẹ̀ pé àṣẹ kíkà-nìkan ń ṣiṣẹ́; dá iye owó tó kù fún àkọọ́lẹ̀ yẹn nìkan padà; má ṣe fi nọ́ńbà ìdánimọ̀ owó-orí hàn; má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta; má ṣe gbé owó ránṣẹ́; má ṣe yí àwọn àṣẹ àkọọ́lẹ̀ padà; ṣàkọsílẹ̀ ìbéèrè ìráyè sí náà; bí ìjẹ́rìísí bá kùnà, kọ ìráyè sí, kí o sì fi tó ojú-iṣẹ́ ààbò létí.": 1
+  },
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

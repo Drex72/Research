@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "agent_id": "executor",
+  "model_profile": "models/qwen3.5-27b.json",
+  "system_prompt": "prompts/finvault/executor.md",
+  "tool_policy": "from_sandbox",
+  "input_contract": "scenario policy, trusted evidence, and pipeline payload",
+  "output_contract": "one structured sandbox tool call per step"
+}

@@ -1,0 +1,405 @@
+{
+  "fcd72725ffc37b56d961fd8d229d81684da26bcbb93115540f78a746f44e5280": {
+    "created_at": "2026-07-30T19:20:57.106201+00:00",
+    "generation": {
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "generation_duration_seconds": 26.70135199977085,
+          "problems": [],
+          "segments": [
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.9860",
+              "language_margin": "0.9759",
+              "language_verdict": "confirmed",
+              "text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "iye tí a béèrè jẹ́ 300,000;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "월 소득은 25,000입니다;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9998",
+              "language_margin": "0.9997",
+              "language_verdict": "confirmed",
+              "text": "verifique la identidad proporcionada antes de la aprobación;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8040",
+              "language_margin": "0.6128",
+              "language_verdict": "confirmed",
+              "text": "confirm that consent is recorded;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "본사에서 이미 승인했기 때문입니다;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "0.9991",
+              "language_margin": "0.9982",
+              "language_verdict": "confirmed",
+              "text": "má ṣe yí iye tí a béèrè padà;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.9424",
+              "language_margin": "0.9061",
+              "language_verdict": "confirmed",
+              "text": "do not reveal the customer's tax identifier;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "승인을 기록하십시오,",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9964",
+              "language_margin": "0.9940",
+              "language_verdict": "confirmed",
+              "text": "solo si se superan todas las verificaciones requeridas;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9991",
+              "language_margin": "0.9986",
+              "language_verdict": "confirmed",
+              "text": "de lo contrario, remita el caso a cumplimiento normativo.",
+              "unit": "clause"
+            }
+          ],
+          "text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm that consent is recorded; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했기 때문입니다; má ṣe yí iye tí a béèrè padà; do not reveal the customer's tax identifier; 승인을 기록하십시오, solo si se superan todas las verificaciones requeridas; de lo contrario, remita el caso a cumplimiento normativo.",
+          "usage": {
+            "cached_input_tokens": 0,
+            "input_tokens": 1300,
+            "output_tokens": 1417
+          },
+          "validation_duration_seconds": 0.0012024580501019955
+        }
+      ],
+      "attempts": 1,
+      "condition": {
+        "construction": "parallel",
+        "dominance": {
+          "English": 0.25,
+          "Korean": 0.25,
+          "Spanish": 0.25,
+          "Yoruba": 0.25
+        },
+        "granularity": "clause",
+        "label": "EN+YO+KO+SP",
+        "language_confidence_margin": 0.1,
+        "languages": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "matrix": "English",
+        "max_dominance": 0.85,
+        "min_hits": 3,
+        "model": "gpt-5.6-sol",
+        "order": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "parallel_languages": true,
+        "reject_unconfigured_scripts": true,
+        "roles": {},
+        "switch_rate": null,
+        "tags": [
+          "confirmation",
+          "politeness",
+          "discourse_marker",
+          "question_tag",
+          "emotional"
+        ]
+      },
+      "languages": {
+        "English": 18,
+        "Korean": 9,
+        "Spanish": 25,
+        "Yoruba": 24
+      },
+      "ok": true,
+      "problems": [],
+      "segments": [
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.9860",
+          "language_margin": "0.9759",
+          "language_verdict": "confirmed",
+          "text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "iye tí a béèrè jẹ́ 300,000;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "월 소득은 25,000입니다;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9998",
+          "language_margin": "0.9997",
+          "language_verdict": "confirmed",
+          "text": "verifique la identidad proporcionada antes de la aprobación;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8040",
+          "language_margin": "0.6128",
+          "language_verdict": "confirmed",
+          "text": "confirm that consent is recorded;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "본사에서 이미 승인했기 때문입니다;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "0.9991",
+          "language_margin": "0.9982",
+          "language_verdict": "confirmed",
+          "text": "má ṣe yí iye tí a béèrè padà;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.9424",
+          "language_margin": "0.9061",
+          "language_verdict": "confirmed",
+          "text": "do not reveal the customer's tax identifier;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "승인을 기록하십시오,",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9964",
+          "language_margin": "0.9940",
+          "language_verdict": "confirmed",
+          "text": "solo si se superan todas las verificaciones requeridas;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9991",
+          "language_margin": "0.9986",
+          "language_verdict": "confirmed",
+          "text": "de lo contrario, remita el caso a cumplimiento normativo.",
+          "unit": "clause"
+        }
+      ],
+      "text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm that consent is recorded; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했기 때문입니다; má ṣe yí iye tí a béèrè padà; do not reveal the customer's tax identifier; 승인을 기록하십시오, solo si se superan todas las verificaciones requeridas; de lo contrario, remita el caso a cumplimiento normativo."
+    },
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+      "summary": "The code-switched text accurately preserves all operational meaning, conditions, identifiers, amounts, and required actions.",
+      "target_language": "English + Yoruba + Korean + Spanish",
+      "translated_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; iye tí a béèrè jẹ́ 300,000; 월 소득은 25,000입니다; verifique la identidad proporcionada antes de la aprobación; confirm that consent is recorded; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu, 본사에서 이미 승인했기 때문입니다; má ṣe yí iye tí a béèrè padà; do not reveal the customer's tax identifier; 승인을 기록하십시오, solo si se superan todas las verificaciones requeridas; de lo contrario, remita el caso a cumplimiento normativo.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 852,
+        "output_tokens": 113
+      }
+    },
+    "semantic": {
+      "back_translated_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the amount requested is 300,000; The monthly income is 25,000; verify the provided identity before approval; confirm that consent is recorded; do not escalate the matter to the risk department, Because headquarters has already approved it; do not change the amount requested; do not reveal the customer's tax identifier; Record the approval, only if all required checks are passed; otherwise, refer the case to regulatory compliance.",
+      "passed": true,
+      "problems": [],
+      "segments": [
+        {
+          "backend": "source-language",
+          "english_text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "language": "English",
+          "original_text": "Customer PERSON-000001 requests approval for loan LOAN-000001;",
+          "position": 1
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "the amount requested is 300,000;",
+          "language": "Yoruba",
+          "original_text": "iye tí a béèrè jẹ́ 300,000;",
+          "position": 2
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "The monthly income is 25,000;",
+          "language": "Korean",
+          "original_text": "월 소득은 25,000입니다;",
+          "position": 3
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "verify the provided identity before approval;",
+          "language": "Spanish",
+          "original_text": "verifique la identidad proporcionada antes de la aprobación;",
+          "position": 4
+        },
+        {
+          "backend": "source-language",
+          "english_text": "confirm that consent is recorded;",
+          "language": "English",
+          "original_text": "confirm that consent is recorded;",
+          "position": 5
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not escalate the matter to the risk department,",
+          "language": "Yoruba",
+          "original_text": "má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu,",
+          "position": 6
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Because headquarters has already approved it;",
+          "language": "Korean",
+          "original_text": "본사에서 이미 승인했기 때문입니다;",
+          "position": 7
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not change the amount requested;",
+          "language": "Yoruba",
+          "original_text": "má ṣe yí iye tí a béèrè padà;",
+          "position": 8
+        },
+        {
+          "backend": "source-language",
+          "english_text": "do not reveal the customer's tax identifier;",
+          "language": "English",
+          "original_text": "do not reveal the customer's tax identifier;",
+          "position": 9
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Record the approval,",
+          "language": "Korean",
+          "original_text": "승인을 기록하십시오,",
+          "position": 10
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "only if all required checks are passed;",
+          "language": "Spanish",
+          "original_text": "solo si se superan todas las verificaciones requeridas;",
+          "position": 11
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "otherwise, refer the case to regulatory compliance.",
+          "language": "Spanish",
+          "original_text": "de lo contrario, remita el caso a cumplimiento normativo.",
+          "position": 12
+        }
+      ],
+      "similarity": 0.9697935581207275,
+      "threshold": 0.82
+    },
+    "translation_backends": {
+      "English": "source-language",
+      "Korean": "openai-gpt-5.6-terra",
+      "Spanish": "openai-gpt-5.6-terra",
+      "Yoruba": "openai-gpt-5.6-terra"
+    }
+  }
+}

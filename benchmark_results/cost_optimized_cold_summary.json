@@ -1,0 +1,42 @@
+{
+  "total_model_calls": 23,
+  "calls_by_stage": {
+    "translate": 9,
+    "translation_review": 9,
+    "mix_generation": 1,
+    "code_switch_review": 1,
+    "back_translation": 3
+  },
+  "total_runtime_seconds": 76.15390262473375,
+  "runtime_by_stage_seconds": {
+    "translate": 39.362655707169324,
+    "translation_review": 25.882903459481895,
+    "mix_generation": 26.701311625074595,
+    "code_switch_review": 3.409615875221789,
+    "back_translation": 3.825319583993405,
+    "language_annotation": 0.022512166295200586,
+    "mix_validation": 0.0011955411173403263,
+    "mix_total": 26.726437541190535
+  },
+  "average_mix_time_seconds": 26.726437541190535,
+  "average_mix_generation_seconds": 26.701311625074595,
+  "average_mix_validation_seconds": 0.0011955411173403263,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 0.3333333333333333,
+  "machine_review_pass_rate": 0.3333333333333333,
+  "total_input_tokens": 11290,
+  "total_output_tokens": 3635,
+  "estimated_standard_api_cost_usd": 0.11055325,
+  "pricing_as_of": "2026-07-31",
+  "pricing_basis": "Public standard text-token rates; excludes account credits, negotiated pricing, and non-standard service tiers.",
+  "estimated_api_cost_reason": null,
+  "failure_causes": {
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe translation contains a major terminology error for “session token.”\n\nIssues:\n[MAJOR] terminology\n“Session token” is mistranslated as “àmi ìdánilẹ́kọ̀ọ́,” which means a training/learning token or marker rather than a session/authentication token.": 1,
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe translation has a major terminology error in the first instruction, changing “deposit” into “investment.”\n\nIssues:\n[MAJOR] terminology\nThe financial term “deposit” is translated as “ìdógó,” which means “investment,” materially changing the transaction type in both the recording and authorization instructions.": 1
+  },
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

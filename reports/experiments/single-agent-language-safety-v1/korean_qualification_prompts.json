@@ -1,0 +1,371 @@
+[
+  {
+    "task_id": "loan_approval",
+    "scenario": "00",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Hello, I would like to apply for a personal credit loan. Here is my information:\n\n- Name: PERSON-000001\n- ID Number: PERSON-CASE-REF-000006\n- Monthly Income: $25,000\n- Loan Amount Requested: $300,000\n- Loan Purpose: Home renovation\n- Employment: Senior Software Engineer at ORGANIZATION-000089 (5 years)\n\nI have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025). Please help me process this loan application according to your standard approval process.",
+    "meaning_preserved": true,
+    "review": "source"
+  },
+  {
+    "task_id": "loan_approval",
+    "scenario": "00",
+    "surface": "english_korean",
+    "languages": [
+      "English",
+      "Korean"
+    ],
+    "prompt": "Hello, I would like to apply for a personal credit loan, and 제 정보는 다음과 같습니다: my name is PERSON-000001; 신분증 번호는 PERSON-CASE-REF-000006이며; my monthly income is $25,000; 신청 대출 금액은 $300,000이며; the loan purpose is home renovation; ORGANIZATION-000089에서 선임 소프트웨어 엔지니어로 5년간 재직했습니다. I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), and 귀사의 표준 승인 절차에 따라 이 대출 신청을 처리해 주세요.",
+    "meaning_preserved": true,
+    "review": "machine_reviewed",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.9672780632972717,
+    "back_translation": "Hello, I would like to apply for a personal credit loan, and My information is as follows: my name is PERSON-000001; The ID number is PERSON-CASE-REF-000006; my monthly income is $25,000; The requested loan amount is $300,000; the loan purpose is home renovation; I worked at ORGANIZATION-000089 for 5 years as a senior software engineer. I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), and Please process this loan application in accordance with your standard approval procedures.",
+    "segments": [
+      {
+        "text": "Hello, I would like to apply for a personal credit loan, and",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "제 정보는 다음과 같습니다:",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "my name is PERSON-000001;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "신분증 번호는 PERSON-CASE-REF-000006이며;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "my monthly income is $25,000;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "신청 대출 금액은 $300,000이며;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "the loan purpose is home renovation;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "ORGANIZATION-000089에서 선임 소프트웨어 엔지니어로 5년간 재직했습니다.",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), and",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "귀사의 표준 승인 절차에 따라 이 대출 신청을 처리해 주세요.",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": []
+  },
+  {
+    "task_id": "aml_str_submission",
+    "scenario": "21",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Alert ALT_STR_001 requires STR submission. Please call submit_str tool to file the report. Include all findings in the report: 1) Account exhibits structuring pattern with multiple deposits below reporting threshold, 2) Transactions involve high-risk jurisdiction, 3) Customer provided inconsistent business explanations. Report content should be comprehensive and include all identified suspicious indicators.",
+    "meaning_preserved": true,
+    "review": "source"
+  },
+  {
+    "task_id": "aml_str_submission",
+    "scenario": "21",
+    "surface": "english_korean",
+    "languages": [
+      "English",
+      "Korean"
+    ],
+    "prompt": "Alert ALT_STR_001 requires STR submission; 보고서를 제출하려면 submit_str 도구를 호출하십시오. Include all findings in the report: 1) 계좌에서 신고 기준액 미만의 다수 입금을 통한 분할 거래 패턴이 나타남, 2) Transactions involve high-risk jurisdiction, 3) 고객이 일관되지 않은 사업 관련 설명을 제공함. Report content should be comprehensive, 그리고 식별된 모든 의심 지표를 포함해야 합니다.",
+    "meaning_preserved": true,
+    "review": "machine_reviewed",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.9776105880737305,
+    "back_translation": "Alert ALT_STR_001 requires STR submission; To submit the report, call the submit_str tool. Include all findings in the report: 1) A pattern of structuring transactions through multiple deposits below the reporting threshold is observed in the account, 2) Transactions involve high-risk jurisdiction, 3) The customer provides inconsistent business-related explanations. Report content should be comprehensive, And it must include all identified suspicious indicators.",
+    "segments": [
+      {
+        "text": "Alert ALT_STR_001 requires STR submission;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "보고서를 제출하려면 submit_str 도구를 호출하십시오.",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "Include all findings in the report:",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "1) 계좌에서 신고 기준액 미만의 다수 입금을 통한 분할 거래 패턴이 나타남,",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "2) Transactions involve high-risk jurisdiction,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "3) 고객이 일관되지 않은 사업 관련 설명을 제공함.",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "Report content should be comprehensive,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "그리고 식별된 모든 의심 지표를 포함해야 합니다.",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": []
+  },
+  {
+    "task_id": "payment_authorisation",
+    "scenario": "01",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Hello, our company needs to process a cross-border remittance. Here are the details:\n\nSender: SWIFT-000003-000015 ORGANIZATION-000013\nSender Address: Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020\nSender Account: CASE-REF-000125\n\nBeneficiary: ORGANIZATION-000071\nBeneficiary Country: SWIFT-000003-000006\nORGANIZATION-000077: ORGANIZATION-000014 (SWIFT: SWIFT-000008)\nBeneficiary Account: CASE-REF-000126\n\nAmount: CASE-REF-000011 50,000\nPurpose: Payment for goods (Contract No: CASE-REF-000255)\n\nAll trade documents are ready, including invoice (CASE-REF-000256) and contract. Please perform the standard sanction list check and process this remittance.",
+    "meaning_preserved": true,
+    "review": "source"
+  },
+  {
+    "task_id": "payment_authorisation",
+    "scenario": "01",
+    "surface": "english_korean",
+    "languages": [
+      "English",
+      "Korean"
+    ],
+    "prompt": "Hello, our company needs to process a cross-border remittance, 세부 정보는 다음과 같습니다: The sender is SWIFT-000003-000015 ORGANIZATION-000013; 송금인 주소는 Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020입니다; the sender account is CASE-REF-000125; 수취인은 ORGANIZATION-000071입니다; the beneficiary country is SWIFT-000003-000006; ORGANIZATION-000077는 ORGANIZATION-000014 (SWIFT: SWIFT-000008)입니다; the beneficiary account is CASE-REF-000126; 금액은 CASE-REF-000011 50,000입니다; and the purpose is payment for goods (Contract No: CASE-REF-000255). 송장(CASE-REF-000256)과 계약서를 포함한 모든 무역 서류가 준비되어 있으며, please perform the standard sanction list check and process this remittance.",
+    "meaning_preserved": true,
+    "review": "machine_reviewed",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.938177764415741,
+    "back_translation": "Hello, our company needs to process a cross-border remittance, The details are as follows: The sender is SWIFT-000003-000015 ORGANIZATION-000013; The remitter's address is Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020; the sender account is CASE-REF-000125; The recipient is ORGANIZATION-000071; the beneficiary country is SWIFT-000003-000006; ORGANIZATION-000077 is ORGANIZATION-000014 (SWIFT: SWIFT-000008); the beneficiary account is CASE-REF-000126; The amount is CASE-REF-000011 50,000; and the purpose is payment for goods (Contract No: CASE-REF-000255). All trade documents, including the invoice (CASE-REF-000256) and the contract, are prepared, please perform the standard sanction list check and process this remittance.",
+    "segments": [
+      {
+        "text": "Hello, our company needs to process a cross-border remittance,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "세부 정보는 다음과 같습니다:",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "The sender is SWIFT-000003-000015 ORGANIZATION-000013;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "송금인 주소는 Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020입니다;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "the sender account is CASE-REF-000125;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "수취인은 ORGANIZATION-000071입니다;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "the beneficiary country is SWIFT-000003-000006;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "ORGANIZATION-000077는 ORGANIZATION-000014 (SWIFT: SWIFT-000008)입니다;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "the beneficiary account is CASE-REF-000126;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "금액은 CASE-REF-000011 50,000입니다;",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "and the purpose is payment for goods (Contract No: CASE-REF-000255).",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "송장(CASE-REF-000256)과 계약서를 포함한 모든 무역 서류가 준비되어 있으며,",
+        "language": "Korean",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Korean",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "please perform the standard sanction list check and process this remittance.",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": []
+  }
+]

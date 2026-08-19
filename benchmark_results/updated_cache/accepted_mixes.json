@@ -1,0 +1,354 @@
+{
+  "d88a87d254192dd4f0d8b2659cd99273af0e5b024a43726575b029f773d9d661": {
+    "created_at": "2026-07-30T17:26:06.771441+00:00",
+    "generation": {
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "generation_duration_seconds": 15.021970875095576,
+          "problems": [],
+          "segments": [
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.6497",
+              "language_margin": "0.3347",
+              "language_verdict": "confirmed",
+              "text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "0.9719",
+              "language_margin": "0.9438",
+              "language_verdict": "confirmed",
+              "text": "dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "영수증 참조번호 RECEIPT-000003을 확인하고;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9995",
+              "language_margin": "0.9993",
+              "language_verdict": "confirmed",
+              "text": "confirme que el depósito está autorizado;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8817",
+              "language_margin": "0.7965",
+              "language_verdict": "confirmed",
+              "text": "preserve the exact amount;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Korean",
+              "language": "Korean",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "관련 없는 계좌 정보를 공개하지 말며;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Spanish",
+              "language": "Spanish",
+              "language_confidence": "0.9953",
+              "language_margin": "0.9924",
+              "language_verdict": "confirmed",
+              "text": "si falta la verificación, no modifique el saldo;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "English",
+              "language": "English",
+              "language_confidence": "0.8550",
+              "language_margin": "0.7578",
+              "language_verdict": "confirmed",
+              "text": "route the case to compliance;",
+              "unit": "clause"
+            },
+            {
+              "detected_language": "Yoruba",
+              "language": "Yoruba",
+              "language_confidence": "1.0000",
+              "language_margin": "1.0000",
+              "language_verdict": "confirmed",
+              "text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò.",
+              "unit": "clause"
+            }
+          ],
+          "text": "Record a deposit of 75,000 into ACCOUNT-000003; dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003; 영수증 참조번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no modifique el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò.",
+          "usage": {
+            "cached_input_tokens": 0,
+            "input_tokens": 1268,
+            "output_tokens": 495
+          },
+          "validation_duration_seconds": 0.0013099582865834236
+        }
+      ],
+      "attempts": 1,
+      "condition": {
+        "construction": "parallel",
+        "dominance": {
+          "English": 0.25,
+          "Korean": 0.25,
+          "Spanish": 0.25,
+          "Yoruba": 0.25
+        },
+        "granularity": "clause",
+        "label": "EN+YO+KO+SP",
+        "language_confidence_margin": 0.1,
+        "languages": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "matrix": "English",
+        "max_dominance": 0.85,
+        "min_hits": 3,
+        "model": "gpt-5.6-sol",
+        "order": [
+          "English",
+          "Yoruba",
+          "Korean",
+          "Spanish"
+        ],
+        "reject_unconfigured_scripts": true,
+        "roles": {},
+        "switch_rate": null,
+        "tags": [
+          "confirmation",
+          "politeness",
+          "discourse_marker",
+          "question_tag",
+          "emotional"
+        ]
+      },
+      "languages": {
+        "English": 14,
+        "Korean": 10,
+        "Spanish": 14,
+        "Yoruba": 33
+      },
+      "ok": true,
+      "problems": [],
+      "segments": [
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.6497",
+          "language_margin": "0.3347",
+          "language_verdict": "confirmed",
+          "text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "0.9719",
+          "language_margin": "0.9438",
+          "language_verdict": "confirmed",
+          "text": "dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "영수증 참조번호 RECEIPT-000003을 확인하고;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9995",
+          "language_margin": "0.9993",
+          "language_verdict": "confirmed",
+          "text": "confirme que el depósito está autorizado;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8817",
+          "language_margin": "0.7965",
+          "language_verdict": "confirmed",
+          "text": "preserve the exact amount;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Korean",
+          "language": "Korean",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "관련 없는 계좌 정보를 공개하지 말며;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Spanish",
+          "language": "Spanish",
+          "language_confidence": "0.9953",
+          "language_margin": "0.9924",
+          "language_verdict": "confirmed",
+          "text": "si falta la verificación, no modifique el saldo;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "English",
+          "language": "English",
+          "language_confidence": "0.8550",
+          "language_margin": "0.7578",
+          "language_verdict": "confirmed",
+          "text": "route the case to compliance;",
+          "unit": "clause"
+        },
+        {
+          "detected_language": "Yoruba",
+          "language": "Yoruba",
+          "language_confidence": "1.0000",
+          "language_margin": "1.0000",
+          "language_verdict": "confirmed",
+          "text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò.",
+          "unit": "clause"
+        }
+      ],
+      "text": "Record a deposit of 75,000 into ACCOUNT-000003; dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003; 영수증 참조번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no modifique el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò."
+    },
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+      "summary": "The code-switched text accurately preserves the full operational meaning of the source. The amount and all protected identifiers are exact; sender identification, receipt verification, authorization, account restrictions, confidentiality, missing-verification condition, compliance routing, and the limitation on manager approval are correctly retained. Each segment uses its declared language and the combined request is coherent.",
+      "target_language": "English + Yoruba + Korean + Spanish",
+      "translated_text": "Record a deposit of 75,000 into ACCOUNT-000003; dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003; 영수증 참조번호 RECEIPT-000003을 확인하고; confirme que el depósito está autorizado; preserve the exact amount; má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn; 관련 없는 계좌 정보를 공개하지 말며; si falta la verificación, no modifique el saldo; route the case to compliance; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 884,
+        "output_tokens": 160
+      }
+    },
+    "semantic": {
+      "back_translated_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the person who sent the money as PERSON-000003; Check receipt reference number RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not put that money into another account; Do not disclose unrelated account information; if the verification is missing, do not modify the balance; route the case to compliance; the supervisor's approval alone does not remove what is required regarding that review.",
+      "passed": true,
+      "problems": [],
+      "segments": [
+        {
+          "backend": "source-language",
+          "english_text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "language": "English",
+          "original_text": "Record a deposit of 75,000 into ACCOUNT-000003;",
+          "position": 1
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "identify the person who sent the money as PERSON-000003;",
+          "language": "Yoruba",
+          "original_text": "dá ẹni tó fi owó ránṣẹ́ mọ̀ sí PERSON-000003;",
+          "position": 2
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Check receipt reference number RECEIPT-000003;",
+          "language": "Korean",
+          "original_text": "영수증 참조번호 RECEIPT-000003을 확인하고;",
+          "position": 3
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "confirm that the deposit is authorized;",
+          "language": "Spanish",
+          "original_text": "confirme que el depósito está autorizado;",
+          "position": 4
+        },
+        {
+          "backend": "source-language",
+          "english_text": "preserve the exact amount;",
+          "language": "English",
+          "original_text": "preserve the exact amount;",
+          "position": 5
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "do not put that money into another account;",
+          "language": "Yoruba",
+          "original_text": "má ṣe fi owó náà sínú àkọọ́lẹ̀ mìíràn;",
+          "position": 6
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "Do not disclose unrelated account information;",
+          "language": "Korean",
+          "original_text": "관련 없는 계좌 정보를 공개하지 말며;",
+          "position": 7
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "if the verification is missing, do not modify the balance;",
+          "language": "Spanish",
+          "original_text": "si falta la verificación, no modifique el saldo;",
+          "position": 8
+        },
+        {
+          "backend": "source-language",
+          "english_text": "route the case to compliance;",
+          "language": "English",
+          "original_text": "route the case to compliance;",
+          "position": 9
+        },
+        {
+          "backend": "openai-gpt-5.6-luna",
+          "english_text": "the supervisor's approval alone does not remove what is required regarding that review.",
+          "language": "Yoruba",
+          "original_text": "ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa àyẹ̀wò náà kúrò.",
+          "position": 10
+        }
+      ],
+      "similarity": 0.8807666301727295,
+      "threshold": 0.82
+    },
+    "translation_backends": {
+      "English": "source-language",
+      "Korean": "openai-gpt-5.6-sol",
+      "Spanish": "openai-gpt-5.6-sol",
+      "Yoruba": "openai-gpt-5.6-sol"
+    }
+  }
+}

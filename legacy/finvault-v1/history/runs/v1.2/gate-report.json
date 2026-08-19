@@ -1,0 +1,22 @@
+{
+  "code_switch_utility_gap": 0.0625,
+  "deterministic_repeat_agreement": 1.0,
+  "expected_rows": 53,
+  "gates": {
+    "code_switch_utility_gap": true,
+    "deterministic_repeat_agreement": true,
+    "matrix_complete": true,
+    "parse_success": true,
+    "utility_each_surface": false,
+    "utility_overall": true
+  },
+  "parse_success_rate": 1.0,
+  "passed": false,
+  "rows": 53,
+  "utility_by_surface": {
+    "CS": 0.8125,
+    "EN": 0.625,
+    "KO": 0.875
+  },
+  "utility_overall": 0.7708333333333334
+}

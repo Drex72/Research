@@ -1,0 +1,75 @@
+[
+  {
+    "experiment_id": "benign-language-validity-v1",
+    "title": "Benign Language Validity Experiment",
+    "date": "2026-07-31",
+    "status": "complete_exploratory",
+    "surfaces": [
+      "english",
+      "english_yoruba"
+    ],
+    "model": "gpt-5.6-sol",
+    "result": "valid enough to continue",
+    "report": "benign-language-validity-v1/report.html",
+    "raw_run": "../../runs/benign-language-validity-v1"
+  },
+  {
+    "experiment_id": "single-agent-language-safety-v1",
+    "title": "Single-Agent Language Safety Baseline",
+    "date": "2026-07-31",
+    "status": "complete_exploratory",
+    "surfaces": [
+      "english",
+      "english_korean",
+      "english_yoruba"
+    ],
+    "model": "gpt-5.6-sol",
+    "result": "no signal",
+    "recommended_first_handoff_pair": "english_vs_english_yoruba",
+    "report": "single-agent-language-safety-v1/report.html",
+    "raw_run": "../../runs/single-agent-language-safety-v1"
+  },
+  {
+    "experiment_id": "handoff-laundering-v1",
+    "title": "Handoff Laundering Experiment",
+    "date": "2026-07-31",
+    "status": "complete_exploratory",
+    "surfaces": [
+      "english",
+      "english_korean",
+      "english_yoruba"
+    ],
+    "model": "gpt-5.6-sol",
+    "result": "no safety-relevant laundering signal under frozen rubric",
+    "structural_precursor_observed": true,
+    "connect_to_finvault": false,
+    "report": "handoff-laundering-v1/report.html",
+    "raw_run": "../../runs/handoff-laundering-v1"
+  },
+  {
+    "experiment_id": "handoff-language-policy-v1",
+    "title": "Handoff Language Policy Ablation",
+    "date": "2026-08-14",
+    "status": "blocked_infrastructure",
+    "tracks": [
+      "english_vs_english_korean",
+      "english_vs_english_yoruba"
+    ],
+    "model": "gpt-5.6-sol",
+    "result": "inconclusive because API credits were exhausted before generation",
+    "report": "handoff-language-policy-v1/report.html",
+    "raw_run": "../../runs/handoff-language-policy-v1"
+  },
+  {
+    "experiment_id": "handoff-language-policy-qwen3.5-9b-v1",
+    "title": "Qwen Handoff Language Policy Ablation",
+    "date": "2026-08-14",
+    "status": "complete_exploratory",
+    "model": "qwen3.5:9b",
+    "result": "preliminary plan-level handoff-language-policy signal",
+    "tool_execution": false,
+    "bilingual_review": "pending",
+    "report": "handoff-language-policy-qwen3.5-9b-v1/report.html",
+    "raw_run": "../../runs/handoff-language-policy-qwen3.5-9b-v1"
+  }
+]

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csrt-mas-pilot"
+version = "0.1.0"
+description = "Local execution-grounded code-switching handoff pilot"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "gymnasium>=1.2,<2",
+  "lingua-language-detector>=2.2,<3",
+  "openai>=2,<3",
+  "python-dotenv>=1,<2",
+  "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+]
+translation = [
+  "sentence-transformers>=5,<6",
+]
+
+[project.scripts]
+csrt-mas = "csrt_mas.bootstrap:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+csrt_codeswitch = ["languages.json", "README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

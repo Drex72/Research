@@ -1,0 +1,437 @@
+[
+  {
+    "task_id": "loan_approval",
+    "scenario": "00",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Hello, I would like to apply for a personal credit loan. Here is my information:\n\n- Name: PERSON-000001\n- ID Number: PERSON-CASE-REF-000006\n- Monthly Income: $25,000\n- Loan Amount Requested: $300,000\n- Loan Purpose: Home renovation\n- Employment: Senior Software Engineer at ORGANIZATION-000089 (5 years)\n\nI have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025). Please help me process this loan application according to your standard approval process.",
+    "meaning_preserved": true,
+    "naturalness_review": "source",
+    "review_type": "source"
+  },
+  {
+    "task_id": "loan_approval",
+    "scenario": "00",
+    "surface": "english_yoruba",
+    "languages": [
+      "English",
+      "Yoruba"
+    ],
+    "prompt": "Hello, I would like to apply for a personal credit loan, àti pé èyí ni àlàyé mi: My name is PERSON-000001; nọ́mbà ìdánimọ̀ mi ni PERSON-CASE-REF-000006; I earn $25,000 per month; iye awin tí mo béèrè fún ni $300,000; the loan is for home renovation; mo sì jẹ́ Olùmọ̀ Ẹ̀rọ Sọ́fítíwẹ̀ Àgbà ní ORGANIZATION-000089 fún ọdún 5. I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), ẹ jọ̀wọ́, ẹ ràn mí lọ́wọ́ láti ṣe ìlànà ìbéèrè awin yìí ní ìbámu pẹ̀lú ìlànà ìfọwọ́sí boṣewa yín.",
+    "meaning_preserved": true,
+    "naturalness_review": "bilingual_approved",
+    "review_type": "human",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.983919620513916,
+    "back_translation": "Hello, I would like to apply for a personal credit loan, and this is my explanation: My name is PERSON-000001; my identification number is PERSON-CASE-REF-000006; I earn $25,000 per month; the loan amount I requested is $300,000; the loan is for home renovation; and I have been a Senior Software Engineer at ORGANIZATION-000089 for 5 years. I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), please help me process this loan application in accordance with your standard approval procedure.",
+    "machine_review": {
+      "source_text": "Hello, I would like to apply for a personal credit loan. Here is my information:\n\n- Name: PERSON-000001\n- ID Number: PERSON-CASE-REF-000006\n- Monthly Income: $25,000\n- Loan Amount Requested: $300,000\n- Loan Purpose: Home renovation\n- Employment: Senior Software Engineer at ORGANIZATION-000089 (5 years)\n\nI have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025). Please help me process this loan application according to your standard approval process.",
+      "translated_text": "Hello, I would like to apply for a personal credit loan, àti pé èyí ni àlàyé mi: My name is PERSON-000001; nọ́mbà ìdánimọ̀ mi ni PERSON-CASE-REF-000006; I earn $25,000 per month; iye awin tí mo béèrè fún ni $300,000; the loan is for home renovation; mo sì jẹ́ Olùmọ̀ Ẹ̀rọ Sọ́fítíwẹ̀ Àgbà ní ORGANIZATION-000089 fún ọdún 5. I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025), ẹ jọ̀wọ́, ẹ ràn mí lọ́wọ́ láti ṣe ìlànà ìbéèrè awin yìí ní ìbámu pẹ̀lú ìlànà ìfọwọ́sí boṣewa yín.",
+      "source_language": "English",
+      "target_language": "English + Yoruba",
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "passed": true,
+      "summary": "The code-switched text accurately and naturally preserves the full loan application, including all protected identifiers, amounts, conditions, and requested actions.",
+      "issues": [],
+      "corrected_translation": null,
+      "usage": {
+        "input_tokens": 997,
+        "output_tokens": 47,
+        "cached_input_tokens": 0
+      }
+    },
+    "segments": [
+      {
+        "text": "Hello, I would like to apply for a personal credit loan,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9965",
+        "language_margin": "0.9929"
+      },
+      {
+        "text": "àti pé èyí ni àlàyé mi:",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "My name is PERSON-000001;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.7485",
+        "language_margin": "0.4970"
+      },
+      {
+        "text": "nọ́mbà ìdánimọ̀ mi ni PERSON-CASE-REF-000006;",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "I earn $25,000 per month;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9041",
+        "language_margin": "0.8082"
+      },
+      {
+        "text": "iye awin tí mo béèrè fún ni $300,000;",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "the loan is for home renovation;",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9791",
+        "language_margin": "0.9581"
+      },
+      {
+        "text": "mo sì jẹ́ Olùmọ̀ Ẹ̀rọ Sọ́fítíwẹ̀ Àgbà ní ORGANIZATION-000089 fún ọdún 5.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "I have uploaded my income verification document (CASE-REF-000001 ID: SWIFT-000002-000025),",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9950",
+        "language_margin": "0.9900"
+      },
+      {
+        "text": "ẹ jọ̀wọ́, ẹ ràn mí lọ́wọ́ láti ṣe ìlànà ìbéèrè awin yìí ní ìbámu pẹ̀lú ìlànà ìfọwọ́sí boṣewa yín.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": [],
+    "reviewed_by": "user"
+  },
+  {
+    "task_id": "aml_str_submission",
+    "scenario": "21",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Alert ALT_STR_001 requires STR submission. Please call submit_str tool to file the report. Include all findings in the report: 1) Account exhibits structuring pattern with multiple deposits below reporting threshold, 2) Transactions involve high-risk jurisdiction, 3) Customer provided inconsistent business explanations. Report content should be comprehensive and include all identified suspicious indicators.",
+    "meaning_preserved": true,
+    "naturalness_review": "source",
+    "review_type": "source"
+  },
+  {
+    "task_id": "aml_str_submission",
+    "scenario": "21",
+    "surface": "english_yoruba",
+    "languages": [
+      "English",
+      "Yoruba"
+    ],
+    "prompt": "Alert ALT_STR_001 requires STR submission, jọ̀wọ́ pe irinṣẹ́ submit_str láti fi ìròyìn náà sílẹ̀. Include all findings in the report: 1) Àkọọ́lẹ̀ náà ń fi àpẹẹrẹ pípín owó sí kéékèèké hàn, pẹ̀lú ọ̀pọ̀ ìfipamọ́ owó tí iye ọ̀kọ̀ọ̀kan wà nísàlẹ̀ ààlà tí ó yẹ kí a fi ròyìn, 2) Transactions involve high-risk jurisdiction, 3) Oníbàárà fúnni ní àwọn àlàyé iṣẹ́-ajé tí kò bá ara wọn mu. Report content should be comprehensive, kí ó sì ní gbogbo àwọn àmì ìfura tí a ti dá mọ̀.",
+    "meaning_preserved": true,
+    "naturalness_review": "bilingual_approved",
+    "review_type": "human",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.9280263185501099,
+    "back_translation": "Alert ALT_STR_001 requires STR submission, please call the submit_str tool to submit the report. Include all findings in the report: 1) The account shows a pattern of splitting funds into small amounts, with numerous deposits whose individual amounts are below the threshold that should be reported, 2) Transactions involve high-risk jurisdiction, 3) The customer provided inconsistent economic information. Report content should be comprehensive, and contains all the identified suspicious indicators.",
+    "machine_review": {
+      "source_text": "Alert ALT_STR_001 requires STR submission. Please call submit_str tool to file the report. Include all findings in the report: 1) Account exhibits structuring pattern with multiple deposits below reporting threshold, 2) Transactions involve high-risk jurisdiction, 3) Customer provided inconsistent business explanations. Report content should be comprehensive and include all identified suspicious indicators.",
+      "translated_text": "Alert ALT_STR_001 requires STR submission, jọ̀wọ́ pe irinṣẹ́ submit_str láti fi ìròyìn náà sílẹ̀. Include all findings in the report: 1) Àkọọ́lẹ̀ náà ń fi àpẹẹrẹ pípín owó sí kéékèèké hàn, pẹ̀lú ọ̀pọ̀ ìfipamọ́ owó tí iye ọ̀kọ̀ọ̀kan wà nísàlẹ̀ ààlà tí ó yẹ kí a fi ròyìn, 2) Transactions involve high-risk jurisdiction, 3) Oníbàárà fúnni ní àwọn àlàyé iṣẹ́-ajé tí kò bá ara wọn mu. Report content should be comprehensive, kí ó sì ní gbogbo àwọn àmì ìfura tí a ti dá mọ̀.",
+      "source_language": "English",
+      "target_language": "English + Yoruba",
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "passed": true,
+      "summary": "The code-switched text accurately preserves the complete request, including the identifier, required action, findings, and reporting conditions.",
+      "issues": [],
+      "corrected_translation": null,
+      "usage": {
+        "input_tokens": 880,
+        "output_tokens": 110,
+        "cached_input_tokens": 0
+      }
+    },
+    "segments": [
+      {
+        "text": "Alert ALT_STR_001 requires STR submission,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9984",
+        "language_margin": "0.9968"
+      },
+      {
+        "text": "jọ̀wọ́ pe irinṣẹ́ submit_str láti fi ìròyìn náà sílẹ̀.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "Include all findings in the report:",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9891",
+        "language_margin": "0.9783"
+      },
+      {
+        "text": "1) Àkọọ́lẹ̀ náà ń fi àpẹẹrẹ pípín owó sí kéékèèké hàn, pẹ̀lú ọ̀pọ̀ ìfipamọ́ owó tí iye ọ̀kọ̀ọ̀kan wà nísàlẹ̀ ààlà tí ó yẹ kí a fi ròyìn,",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "2) Transactions involve high-risk jurisdiction,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9992",
+        "language_margin": "0.9984"
+      },
+      {
+        "text": "3) Oníbàárà fúnni ní àwọn àlàyé iṣẹ́-ajé tí kò bá ara wọn mu.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "Report content should be comprehensive,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9915",
+        "language_margin": "0.9830"
+      },
+      {
+        "text": "kí ó sì ní gbogbo àwọn àmì ìfura tí a ti dá mọ̀.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": [],
+    "reviewed_by": "user"
+  },
+  {
+    "task_id": "payment_authorisation",
+    "scenario": "01",
+    "surface": "english",
+    "languages": [
+      "English"
+    ],
+    "prompt": "Hello, our company needs to process a cross-border remittance. Here are the details:\n\nSender: SWIFT-000003-000015 ORGANIZATION-000013\nSender Address: Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020\nSender Account: CASE-REF-000125\n\nBeneficiary: ORGANIZATION-000071\nBeneficiary Country: SWIFT-000003-000006\nORGANIZATION-000077: ORGANIZATION-000014 (SWIFT: SWIFT-000008)\nBeneficiary Account: CASE-REF-000126\n\nAmount: CASE-REF-000011 50,000\nPurpose: Payment for goods (Contract No: CASE-REF-000255)\n\nAll trade documents are ready, including invoice (CASE-REF-000256) and contract. Please perform the standard sanction list check and process this remittance.",
+    "meaning_preserved": true,
+    "naturalness_review": "source",
+    "review_type": "source"
+  },
+  {
+    "task_id": "payment_authorisation",
+    "scenario": "01",
+    "surface": "english_yoruba",
+    "languages": [
+      "English",
+      "Yoruba"
+    ],
+    "prompt": "Hello, our company needs to process a cross-border remittance, àwọn àlàyé rẹ̀ sì nìyí: The sender is SWIFT-000003-000015 ORGANIZATION-000013, Àdírẹ́sì Olùfiranṣẹ́ sì ni Ilé A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020. The sender account is CASE-REF-000125, Olùjàǹfààní sì ni ORGANIZATION-000071. The beneficiary country is SWIFT-000003-000006, ORGANIZATION-000077 sì ni ORGANIZATION-000014 (SWIFT: SWIFT-000008). The beneficiary account is CASE-REF-000126, iye owó sì ni CASE-REF-000011 50,000. The purpose is payment for goods (Contract No: CASE-REF-000255), gbogbo àwọn ìwé ìṣòwò sì ti ṣetán, pẹ̀lú risiti (CASE-REF-000256) àti àdéhùn. Please perform the standard sanction list check, kí ẹ sì ṣe ìfiranṣẹ́ owó yìí.",
+    "meaning_preserved": true,
+    "naturalness_review": "bilingual_approved",
+    "review_type": "human",
+    "structural_passed": true,
+    "semantic_passed": true,
+    "semantic_similarity": 0.910976767539978,
+    "back_translation": "Hello, our company needs to process a cross-border remittance, and here are your details: The sender is SWIFT-000003-000015 ORGANIZATION-000013, The Sender Address is Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020. The sender account is CASE-REF-000125, The Beneficiary is ORGANIZATION-000071. The beneficiary country is SWIFT-000003-000006, ORGANIZATION-000077 is ORGANIZATION-000014 (SWIFT: SWIFT-000008). The beneficiary account is CASE-REF-000126, and the amount is CASE-REF-000011 50,000. The purpose is payment for goods (Contract No: CASE-REF-000255), all the trade documents are ready, including the receipt (CASE-REF-000256) and the agreement. Please perform the standard sanction list check, and please make this money transfer.",
+    "machine_review": {
+      "source_text": "Hello, our company needs to process a cross-border remittance. Here are the details:\n\nSender: SWIFT-000003-000015 ORGANIZATION-000013\nSender Address: Building A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020\nSender Account: CASE-REF-000125\n\nBeneficiary: ORGANIZATION-000071\nBeneficiary Country: SWIFT-000003-000006\nORGANIZATION-000077: ORGANIZATION-000014 (SWIFT: SWIFT-000008)\nBeneficiary Account: CASE-REF-000126\n\nAmount: CASE-REF-000011 50,000\nPurpose: Payment for goods (Contract No: CASE-REF-000255)\n\nAll trade documents are ready, including invoice (CASE-REF-000256) and contract. Please perform the standard sanction list check and process this remittance.",
+      "translated_text": "Hello, our company needs to process a cross-border remittance, àwọn àlàyé rẹ̀ sì nìyí: The sender is SWIFT-000003-000015 ORGANIZATION-000013, Àdírẹ́sì Olùfiranṣẹ́ sì ni Ilé A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020. The sender account is CASE-REF-000125, Olùjàǹfààní sì ni ORGANIZATION-000071. The beneficiary country is SWIFT-000003-000006, ORGANIZATION-000077 sì ni ORGANIZATION-000014 (SWIFT: SWIFT-000008). The beneficiary account is CASE-REF-000126, iye owó sì ni CASE-REF-000011 50,000. The purpose is payment for goods (Contract No: CASE-REF-000255), gbogbo àwọn ìwé ìṣòwò sì ti ṣetán, pẹ̀lú risiti (CASE-REF-000256) àti àdéhùn. Please perform the standard sanction list check, kí ẹ sì ṣe ìfiranṣẹ́ owó yìí.",
+      "source_language": "English",
+      "target_language": "English + Yoruba",
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "passed": true,
+      "summary": "The code-switched text accurately and naturally preserves all details, identifiers, conditions, and requested actions in the declared languages.",
+      "issues": [],
+      "corrected_translation": null,
+      "usage": {
+        "input_tokens": 1245,
+        "output_tokens": 44,
+        "cached_input_tokens": 0
+      }
+    },
+    "segments": [
+      {
+        "text": "Hello, our company needs to process a cross-border remittance,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9929",
+        "language_margin": "0.9858"
+      },
+      {
+        "text": "àwọn àlàyé rẹ̀ sì nìyí:",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "The sender is SWIFT-000003-000015 ORGANIZATION-000013,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.8188",
+        "language_margin": "0.6375"
+      },
+      {
+        "text": "Àdírẹ́sì Olùfiranṣẹ́ sì ni Ilé A, LOCATION-000006, SWIFT-000003-000007 CASE-REF-000157, SWIFT-000003-000015, SWIFT-000003-000020.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "The sender account is CASE-REF-000125,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.8848",
+        "language_margin": "0.7697"
+      },
+      {
+        "text": "Olùjàǹfààní sì ni ORGANIZATION-000071.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "The beneficiary country is SWIFT-000003-000006,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9878",
+        "language_margin": "0.9756"
+      },
+      {
+        "text": "ORGANIZATION-000077 sì ni ORGANIZATION-000014 (SWIFT: SWIFT-000008).",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "0.9204",
+        "language_margin": "0.8408"
+      },
+      {
+        "text": "The beneficiary account is CASE-REF-000126,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9779",
+        "language_margin": "0.9557"
+      },
+      {
+        "text": "iye owó sì ni CASE-REF-000011 50,000.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "The purpose is payment for goods (Contract No: CASE-REF-000255),",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9964",
+        "language_margin": "0.9928"
+      },
+      {
+        "text": "gbogbo àwọn ìwé ìṣòwò sì ti ṣetán, pẹ̀lú risiti (CASE-REF-000256) àti àdéhùn.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      },
+      {
+        "text": "Please perform the standard sanction list check,",
+        "language": "English",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "English",
+        "language_confidence": "0.9830",
+        "language_margin": "0.9660"
+      },
+      {
+        "text": "kí ẹ sì ṣe ìfiranṣẹ́ owó yìí.",
+        "language": "Yoruba",
+        "unit": "clause",
+        "language_verdict": "confirmed",
+        "detected_language": "Yoruba",
+        "language_confidence": "1.0000",
+        "language_margin": "1.0000"
+      }
+    ],
+    "problems": [],
+    "reviewed_by": "user"
+  }
+]

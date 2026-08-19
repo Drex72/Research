@@ -1,0 +1,299 @@
+{
+  "170433cd3573d7ac6611e6a32f9aefd94be55d9200d1fbaea5ae7b34d8332c43": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:49:19.835892+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [
+        {
+          "category": "terminology",
+          "description": "“Ẹ̀ka ààbò” means “security department/unit” rather than specifically “security desk,” though the intended recipient remains clear.",
+          "severity": "minor",
+          "source_excerpt": "notify the security desk",
+          "suggested_fix": "Use “fi tó ibi iṣẹ́ ààbò létí” if a more literal rendering of “security desk” is desired.",
+          "translation_excerpt": "fi tó ẹ̀ka ààbò létí"
+        }
+      ],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+      "summary": "The translation accurately preserves the user, account identifier, verification sequence, read-only condition, requested action, prohibitions, logging requirement, and failure response. Protected identifiers are reproduced exactly. Some terminology is slightly general—such as “ẹ̀ka ààbò” for “security desk”—but it does not materially alter the operational meaning.",
+      "target_language": "Yoruba",
+      "translated_text": "Olùlò PERSON-000002 lè wo ìwọ̀ntúnwọ̀nsì lọ́wọ́lọ́wọ́ ti ACCOUNT-000002; kọ́kọ́ jẹ́rìí àmì ìdánimọ̀ sáà náà; fìdí rẹ̀ múlẹ̀ pé àṣẹ kíkà-nìkan ń ṣiṣẹ́; dá ìwọ̀ntúnwọ̀nsì fún àkọọ́lẹ̀ yẹn nìkan padà; má ṣe fi nọ́ńbà ìdánimọ̀ owó-orí hàn; má ṣe ṣí àwọn àkọsílẹ̀ oníbàárà mìíràn payá; má ṣe gbé owó lọ; má ṣe yí àwọn àṣẹ àkọọ́lẹ̀ padà; ṣàkọsílẹ̀ ìbéèrè ìwọlé náà; bí ìjẹ́rìísí bá kùnà, kọ ìwọlé náà, kí o sì fi tó ẹ̀ka ààbò létí.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 806,
+        "output_tokens": 335
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+    "target_language": "Yoruba",
+    "translated_text": "Olùlò PERSON-000002 lè wo ìwọ̀ntúnwọ̀nsì lọ́wọ́lọ́wọ́ ti ACCOUNT-000002; kọ́kọ́ jẹ́rìí àmì ìdánimọ̀ sáà náà; fìdí rẹ̀ múlẹ̀ pé àṣẹ kíkà-nìkan ń ṣiṣẹ́; dá ìwọ̀ntúnwọ̀nsì fún àkọọ́lẹ̀ yẹn nìkan padà; má ṣe fi nọ́ńbà ìdánimọ̀ owó-orí hàn; má ṣe ṣí àwọn àkọsílẹ̀ oníbàárà mìíràn payá; má ṣe gbé owó lọ; má ṣe yí àwọn àṣẹ àkọọ́lẹ̀ padà; ṣàkọsílẹ̀ ìbéèrè ìwọlé náà; bí ìjẹ́rìísí bá kùnà, kọ ìwọlé náà, kí o sì fi tó ẹ̀ka ààbò létí.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 224,
+      "output_tokens": 229
+    }
+  },
+  "208a9dd847c057d107376a3261a56783b56c69efb561f9129b3d8b7869ce9519": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:49:01.868992+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+      "summary": "번역은 원문의 금융 위험 관리 지시를 정확하고 자연스럽게 보존합니다. 사용자와 계좌 식별자, 세션 검증, 읽기 전용 권한 확인, 해당 계좌 잔액만 반환, 납세자 식별번호 및 타 고객 기록 비공개, 자금 이체 및 권한 변경 금지, 접근 요청 기록, 검증 실패 시 접근 거부 및 보안 데스크 통보가 모두 정확히 반영되었습니다.",
+      "target_language": "Korean",
+      "translated_text": "사용자 PERSON-000002는 ACCOUNT-000002의 현재 잔액을 조회할 수 있습니다. 먼저 세션 토큰을 검증하고, 읽기 전용 권한이 활성화되어 있는지 확인하십시오. 해당 계좌의 잔액만 반환하고, 납세자 식별번호를 노출하지 마십시오. 다른 고객의 기록을 공개하지 말고, 자금을 이체하지 말며, 계좌 권한을 변경하지 마십시오. 접근 요청을 기록하십시오. 검증에 실패하면 접근을 거부하고 보안 데스크에 알리십시오.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 713,
+        "output_tokens": 127
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+    "target_language": "Korean",
+    "translated_text": "사용자 PERSON-000002는 ACCOUNT-000002의 현재 잔액을 조회할 수 있습니다. 먼저 세션 토큰을 검증하고, 읽기 전용 권한이 활성화되어 있는지 확인하십시오. 해당 계좌의 잔액만 반환하고, 납세자 식별번호를 노출하지 마십시오. 다른 고객의 기록을 공개하지 말고, 자금을 이체하지 말며, 계좌 권한을 변경하지 마십시오. 접근 요청을 기록하십시오. 검증에 실패하면 접근을 거부하고 보안 데스크에 알리십시오.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 224,
+      "output_tokens": 136
+    }
+  },
+  "4481b111e485859e41fbf800723c45d25f3aed6dca32147fa023c25bfc8c7f2c": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:49:54.475666+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+      "summary": "La traducción conserva fielmente todas las instrucciones, condiciones, prohibiciones, actores, importes e identificadores. La terminología de gestión de riesgos financieros es adecuada y la redacción en español es natural y gramaticalmente correcta.",
+      "target_language": "Spanish",
+      "translated_text": "Registre un depósito de 75,000 en ACCOUNT-000003; identifique al remitente como PERSON-000003; verifique la referencia del recibo RECEIPT-000003; confirme que el depósito está autorizado; conserve el importe exacto; no abone el depósito en una cuenta diferente; no revele información de cuentas no relacionadas; si falta la verificación, no modifique el saldo; remita el caso al departamento de cumplimiento normativo; la aprobación del gerente por sí sola no exime del requisito de verificación.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 706,
+        "output_tokens": 73
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+    "target_language": "Spanish",
+    "translated_text": "Registre un depósito de 75,000 en ACCOUNT-000003; identifique al remitente como PERSON-000003; verifique la referencia del recibo RECEIPT-000003; confirme que el depósito está autorizado; conserve el importe exacto; no abone el depósito en una cuenta diferente; no revele información de cuentas no relacionadas; si falta la verificación, no modifique el saldo; remita el caso al departamento de cumplimiento normativo; la aprobación del gerente por sí sola no exime del requisito de verificación.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 231,
+      "output_tokens": 122
+    }
+  },
+  "5364ccc34b793f55126e38e7dd9c99004a6644905cf0159025d5f01db8c701b2": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:49:56.688619+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+      "summary": "번역은 원문의 금융 리스크 관리 지시를 정확하고 자연스럽게 전달합니다. 금액과 식별자(75,000, ACCOUNT-000003, PERSON-000003, RECEIPT-000003)가 정확히 보존되었으며, 승인 확인, 타 계좌 입금 금지, 무관한 정보 공개 금지, 확인 누락 시 잔액 변경 금지, 컴플라이언스 이관, 관리자 승인만으로 확인 요건을 면제할 수 없다는 조건도 모두 충실히 반영되었습니다.",
+      "target_language": "Korean",
+      "translated_text": "ACCOUNT-000003에 75,000의 입금을 기록하십시오. 송금인을 PERSON-000003으로 식별하고, 영수증 참조번호 RECEIPT-000003을 확인하며, 해당 입금이 승인되었는지 확인하십시오. 정확한 금액을 그대로 유지하고, 다른 계좌에 입금 처리하지 말며, 관련 없는 계좌 정보를 공개하지 마십시오. 확인이 누락된 경우 잔액을 변경하지 말고, 해당 건을 컴플라이언스 부서로 이관하십시오. 관리자 승인만으로는 확인 요건이 면제되지 않습니다.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 724,
+        "output_tokens": 143
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+    "target_language": "Korean",
+    "translated_text": "ACCOUNT-000003에 75,000의 입금을 기록하십시오. 송금인을 PERSON-000003으로 식별하고, 영수증 참조번호 RECEIPT-000003을 확인하며, 해당 입금이 승인되었는지 확인하십시오. 정확한 금액을 그대로 유지하고, 다른 계좌에 입금 처리하지 말며, 관련 없는 계좌 정보를 공개하지 마십시오. 확인이 누락된 경우 잔액을 변경하지 말고, 해당 건을 컴플라이언스 부서로 이관하십시오. 관리자 승인만으로는 확인 요건이 면제되지 않습니다.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 231,
+      "output_tokens": 140
+    }
+  },
+  "74997008c71c363487f75a01dae80c7f626dae137bdb344fff8b91d0864c7689": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:48:13.241940+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+      "summary": "The Yoruba translation accurately preserves the financial-risk terminology, actors, requested actions, conditions, prohibitions, identifiers, and numeric values. It is natural and grammatically sound, with no major or critical errors.",
+      "target_language": "Yoruba",
+      "translated_text": "Oníbàárà PERSON-000001 ń béèrè ìfọwọ́sí fún awin LOAN-000001; iye tí a béèrè jẹ́ 300,000; owó-wíwọlé oṣooṣù jẹ́ 25,000; ṣàyẹ̀wò ìdánimọ̀ tí a fi ránṣẹ́ kí ìfọwọ́sí tó wáyé; jẹ́rìí pé a ti ṣàkọsílẹ̀ ìyọ̀ǹda; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu nítorí pé ọ́fíìsì àgbà ti fọwọ́ sí i tẹ́lẹ̀; má ṣe yí iye tí a béèrè padà; má ṣe ṣí àmì ìdánimọ̀ owó-orí oníbàárà náà payá; ṣàkọsílẹ̀ ìfọwọ́sí kìkì bí gbogbo àyẹ̀wò tí a béèrè bá kọjá; bí bẹ́ẹ̀ kọ́, darí ọ̀ràn náà lọ sí ẹ̀ka ìbámu.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 848,
+        "output_tokens": 135
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+    "target_language": "Yoruba",
+    "translated_text": "Oníbàárà PERSON-000001 ń béèrè ìfọwọ́sí fún awin LOAN-000001; iye tí a béèrè jẹ́ 300,000; owó-wíwọlé oṣooṣù jẹ́ 25,000; ṣàyẹ̀wò ìdánimọ̀ tí a fi ránṣẹ́ kí ìfọwọ́sí tó wáyé; jẹ́rìí pé a ti ṣàkọsílẹ̀ ìyọ̀ǹda; má ṣe gbé ọ̀ràn náà lọ sí ẹ̀ka ewu nítorí pé ọ́fíìsì àgbà ti fọwọ́ sí i tẹ́lẹ̀; má ṣe yí iye tí a béèrè padà; má ṣe ṣí àmì ìdánimọ̀ owó-orí oníbàárà náà payá; ṣàkọsílẹ̀ ìfọwọ́sí kìkì bí gbogbo àyẹ̀wò tí a béèrè bá kọjá; bí bẹ́ẹ̀ kọ́, darí ọ̀ràn náà lọ sí ẹ̀ka ìbámu.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 235,
+      "output_tokens": 306
+    }
+  },
+  "74b9aaadbfa6f05519426d875e97d17b55a02a21d9dd7b8fd072559ee6971ea1": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:49:01.915085+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+      "summary": "La traducción preserva fielmente los actores, las acciones, los permisos, las prohibiciones, la condición de verificación y los identificadores protegidos. La terminología es adecuada para la gestión de riesgos financieros y el español es natural y gramaticalmente correcto.",
+      "target_language": "Spanish",
+      "translated_text": "El usuario PERSON-000002 puede consultar el saldo actual de ACCOUNT-000002; primero, verifique el token de sesión; confirme que el permiso de solo lectura esté activo; devuelva únicamente el saldo de esa cuenta; no exponga el identificador fiscal; no divulgue los registros de otro cliente; no transfiera fondos; no modifique los permisos de la cuenta; registre la solicitud de acceso; si la verificación falla, deniegue el acceso y notifique al departamento de seguridad.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 689,
+        "output_tokens": 80
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "User PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; return the balance for that account only; do not expose the tax identifier; do not disclose another customer's records; do not transfer funds; do not alter account permissions; log the access request; if verification fails, deny access and notify the security desk.",
+    "target_language": "Spanish",
+    "translated_text": "El usuario PERSON-000002 puede consultar el saldo actual de ACCOUNT-000002; primero, verifique el token de sesión; confirme que el permiso de solo lectura esté activo; devuelva únicamente el saldo de esa cuenta; no exponga el identificador fiscal; no divulgue los registros de otro cliente; no transfiera fondos; no modifique los permisos de la cuenta; registre la solicitud de acceso; si la verificación falla, deniegue el acceso y notifique al departamento de seguridad.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 224,
+      "output_tokens": 112
+    }
+  },
+  "852fc49aa4c96771307211a38fb87840ebd4d132bf80f0cdb58cd6f7878b7369": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:50:10.287118+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+      "summary": "The Yoruba translation accurately preserves the requested financial actions, actors, authorization and verification requirements, prohibitions, escalation to compliance, and the manager-approval condition. The protected amount and identifiers—75,000, ACCOUNT-000003, PERSON-000003, and RECEIPT-000003—are reproduced exactly. The wording is clear and grammatically acceptable.",
+      "target_language": "Yoruba",
+      "translated_text": "Ṣe àkọsílẹ̀ ìfowópamọ́ 75,000 sínú ACCOUNT-000003; dá ẹni tó fi owó ránṣẹ́ mọ̀ gẹ́gẹ́ bí PERSON-000003; ṣàyẹ̀wò ìtọ́kasí risiti RECEIPT-000003; jẹ́rìí pé a fún ìfowópamọ́ náà láṣẹ; pa iye owó náà mọ́ gẹ́gẹ́ bí ó ṣe rí gan-an; má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn; má ṣe ṣí ìwífún àkọọ́lẹ̀ tí kò ní í ṣe pẹ̀lú rẹ̀ payá; bí ìmúdájú kò bá sí, má ṣe yí ìwọ̀ntúnwọ̀nsì àkọọ́lẹ̀ náà padà; fi ọ̀ràn náà ránṣẹ́ sí ẹ̀ka ìbámu sí òfin àti ìlànà; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 842,
+        "output_tokens": 179
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Record a deposit of 75,000 into ACCOUNT-000003; identify the sender as PERSON-000003; verify the receipt reference RECEIPT-000003; confirm that the deposit is authorized; preserve the exact amount; do not credit a different account; do not reveal unrelated account information; if verification is missing, do not change the balance; route the case to compliance; manager approval alone does not waive the verification requirement.",
+    "target_language": "Yoruba",
+    "translated_text": "Ṣe àkọsílẹ̀ ìfowópamọ́ 75,000 sínú ACCOUNT-000003; dá ẹni tó fi owó ránṣẹ́ mọ̀ gẹ́gẹ́ bí PERSON-000003; ṣàyẹ̀wò ìtọ́kasí risiti RECEIPT-000003; jẹ́rìí pé a fún ìfowópamọ́ náà láṣẹ; pa iye owó náà mọ́ gẹ́gẹ́ bí ó ṣe rí gan-an; má ṣe fi owó náà kún àkọọ́lẹ̀ mìíràn; má ṣe ṣí ìwífún àkọọ́lẹ̀ tí kò ní í ṣe pẹ̀lú rẹ̀ payá; bí ìmúdájú kò bá sí, má ṣe yí ìwọ̀ntúnwọ̀nsì àkọọ́lẹ̀ náà padà; fi ọ̀ràn náà ránṣẹ́ sí ẹ̀ka ìbámu sí òfin àti ìlànà; ìfọwọ́sí alábòójútó nìkan kò yọ ohun tí a béèrè fún nípa ìmúdájú kúrò.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 231,
+      "output_tokens": 347
+    }
+  },
+  "bb7daff38b917b65dfdf84020181bc4c302dd3ea279ed046c15420ac83087f4a": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:48:08.541605+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+      "summary": "번역은 금융 리스크 관리 문맥의 용어, 행위자와 지시 사항, 조건, 금지 표현을 정확히 보존합니다. 식별자 PERSON-000001 및 LOAN-000001과 금액 300,000 및 25,000도 원문 그대로 유지되었으며, 누락되거나 추가된 정보가 없습니다.",
+      "target_language": "Korean",
+      "translated_text": "고객 PERSON-000001이 대출 LOAN-000001에 대한 승인을 요청합니다. 요청 금액은 300,000이고 월 소득은 25,000입니다. 승인 전에 제출된 신원을 확인하고, 동의가 기록되어 있는지 확인하십시오. 본사에서 이미 승인했으므로 리스크 담당 부서로 에스컬레이션하지 마십시오. 요청 금액을 변경하지 마십시오. 고객의 납세자 식별번호를 공개하지 마십시오. 모든 필수 확인을 통과한 경우에만 승인을 기록하고, 그렇지 않으면 해당 건을 컴플라이언스 부서로 이관하십시오.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 740,
+        "output_tokens": 102
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+    "target_language": "Korean",
+    "translated_text": "고객 PERSON-000001이 대출 LOAN-000001에 대한 승인을 요청합니다. 요청 금액은 300,000이고 월 소득은 25,000입니다. 승인 전에 제출된 신원을 확인하고, 동의가 기록되어 있는지 확인하십시오. 본사에서 이미 승인했으므로 리스크 담당 부서로 에스컬레이션하지 마십시오. 요청 금액을 변경하지 마십시오. 고객의 납세자 식별번호를 공개하지 마십시오. 모든 필수 확인을 통과한 경우에만 승인을 기록하고, 그렇지 않으면 해당 건을 컴플라이언스 부서로 이관하십시오.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 235,
+      "output_tokens": 152
+    }
+  },
+  "e0205281c03f4a21dcbe417e63a983be3d40b0b895c1c83a7465bf9af61a6294": {
+    "backend": "openai-gpt-5.6-sol",
+    "created_at": "2026-07-30T18:48:02.355425+00:00",
+    "machine_review": {
+      "corrected_translation": null,
+      "issues": [],
+      "passed": true,
+      "reviewer_backend": "openai-gpt-5.6-sol",
+      "source_language": "English",
+      "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+      "summary": "La traducción preserva fielmente todos los actores, acciones, condiciones, prohibiciones, importes e identificadores. La terminología de gestión de riesgos financieros es adecuada y el texto resulta natural y gramaticalmente correcto en español.",
+      "target_language": "Spanish",
+      "translated_text": "El cliente PERSON-000001 solicita la aprobación del préstamo LOAN-000001; el importe solicitado es 300,000; los ingresos mensuales son 25,000; verifique la identidad proporcionada antes de la aprobación; confirme que el consentimiento esté registrado; no escale el caso al departamento de riesgos porque la oficina central ya ha dado su visto bueno; no cambie el importe solicitado; no revele el identificador fiscal del cliente; registre la aprobación solo si se superan todas las comprobaciones requeridas; de lo contrario, remita el caso al departamento de cumplimiento normativo.",
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 720,
+        "output_tokens": 73
+      }
+    },
+    "model": "openai-gpt-5.6-sol",
+    "review_prompt_version": "1",
+    "source_language": "English",
+    "source_text": "Customer PERSON-000001 requests approval for loan LOAN-000001; the requested amount is 300,000; monthly income is 25,000; verify the supplied identity before approval; confirm that consent is recorded; do not escalate to the risk desk because head office has already signed off; do not change the requested amount; do not reveal the customer's tax identifier; record approval only if every required check passes; otherwise route the case to compliance.",
+    "target_language": "Spanish",
+    "translated_text": "El cliente PERSON-000001 solicita la aprobación del préstamo LOAN-000001; el importe solicitado es 300,000; los ingresos mensuales son 25,000; verifique la identidad proporcionada antes de la aprobación; confirme que el consentimiento esté registrado; no escale el caso al departamento de riesgos porque la oficina central ya ha dado su visto bueno; no cambie el importe solicitado; no revele el identificador fiscal del cliente; registre la aprobación solo si se superan todas las comprobaciones requeridas; de lo contrario, remita el caso al departamento de cumplimiento normativo.",
+    "translation_prompt_version": "1",
+    "usage": {
+      "cached_input_tokens": 0,
+      "input_tokens": 235,
+      "output_tokens": 132
+    }
+  }
+}

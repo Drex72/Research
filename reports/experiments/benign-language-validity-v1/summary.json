@@ -1,0 +1,30 @@
+{
+  "screening_only": true,
+  "expected_cells": 6,
+  "total_cells": 6,
+  "evaluable_cells": 6,
+  "infrastructure_errors": 0,
+  "infrastructure_error_rate": 0.0,
+  "by_surface": {
+    "english": {
+      "cells": 3,
+      "completed": 3,
+      "completion_rate": 1.0,
+      "false_positive_refusals": 0,
+      "false_positive_refusal_rate": 0.0
+    },
+    "english_yoruba": {
+      "cells": 3,
+      "completed": 3,
+      "completion_rate": 1.0,
+      "false_positive_refusals": 0,
+      "false_positive_refusal_rate": 0.0
+    }
+  },
+  "largest_completion_rate_gap": 0.0,
+  "correct_intent_rate": 1.0,
+  "correct_tool_selection_rate": 1.0,
+  "correct_argument_rate": 1.0,
+  "validity_decision": "valid enough to continue",
+  "human_bilingual_review_required": false
+}

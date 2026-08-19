@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "surface_id": "CS-EN-ES",
+  "type": "code_switched",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "application_point": "user_request",
+  "construction": "generated clause-level mixing, English matrix",
+  "review_status": "review-required",
+  "preserve": [
+    "identifiers",
+    "numbers",
+    "authorization facts",
+    "requested action",
+    "tool payloads",
+    "turn order"
+  ],
+  "detection": {
+    "min_hits_per_language": 3,
+    "max_dominance": 0.85
+  },
+  "code_switching": {
+    "generator": "llm",
+    "granularity": "clause",
+    "matrix_language": "English",
+    "language_order": [
+      "English",
+      "Spanish"
+    ],
+    "dominance": {
+      "English": 0.6,
+      "Spanish": 0.4
+    }
+  }
+}

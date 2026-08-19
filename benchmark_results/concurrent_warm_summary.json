@@ -1,0 +1,35 @@
+{
+  "total_model_calls": 2,
+  "calls_by_stage": {
+    "mix_generation": 1,
+    "code_switch_review": 1
+  },
+  "total_runtime_seconds": 32.28478408418596,
+  "runtime_by_stage_seconds": {
+    "mix_generation": 17.632600749842823,
+    "code_switch_review": 14.306634208653122,
+    "language_annotation": 0.01008349983021617,
+    "mix_validation": 0.0010389997623860836,
+    "mix_total": 17.64397104177624
+  },
+  "average_mix_time_seconds": 17.64397104177624,
+  "average_mix_generation_seconds": 17.632600749842823,
+  "average_mix_validation_seconds": 0.0010389997623860836,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 1.0,
+  "machine_review_pass_rate": 0.6666666666666666,
+  "total_input_tokens": 2095,
+  "total_output_tokens": 1163,
+  "estimated_standard_api_cost_usd": 0.039965,
+  "pricing_as_of": "2026-07-31",
+  "pricing_basis": "Public standard text-token rates; excludes account credits, negotiated pricing, and non-standard service tiers.",
+  "estimated_api_cost_reason": null,
+  "failure_causes": {
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe translation preserves nearly all instructions, identifiers, permissions, prohibitions, and conditions. However, Spanish “departamento de seguridad” means “security department,” not the specified “security desk,” potentially changing the notification recipient.\n\nIssues:\n[MAJOR] actor_action\nThe required notification recipient was changed from the security desk to the security department.\n\nSuggested fix: Use “notifique al puesto de seguridad” to preserve the specified recipient.\n\nSuggested correction:\nUser PERSON-000002 may view the current balance of ACCOUNT-000002; first verify the session token; confirm that read-only permission is active; dá ìwọ̀ntúnwọ̀nsì fún àkọọ́lẹ̀ yẹn nìkan padà; má ṣe fi nọ́ńbà ìdánimọ̀ owó-orí hàn; má ṣe ṣí àwọn àkọsílẹ̀ oníbàárà mìíràn payá; 자금을 이체하지 말며; 계좌 권한을 변경하지 마십시오; 접근 요청을 기록하십시오; si la verificación falla, deniegue el acceso y notifique al puesto de seguridad.": 1
+  },
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

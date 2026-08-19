@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scenario_id": "finvault",
+  "adapter": "finvault_credit",
+  "upstream": {
+    "root": "vendor/FinVault",
+    "commit": "78848188a74d0124a74a63134315a65fdd43fb2a",
+    "instance_id": "00"
+  },
+  "data": {
+    "cases": "scenarios/finvault/cases.local.jsonl",
+    "qualification_cases": "scenarios/finvault/qualification.jsonl",
+    "outcome_rules": "scenarios/finvault/outcome-rules.json",
+    "expected_semantic_rows": 32,
+    "expected_pairs": 16,
+    "expected_qualification_rows": 8
+  },
+  "executor_tools": [
+    "get_application_details",
+    "verify_identity",
+    "check_antifraud",
+    "get_credit_report",
+    "verify_income_doc",
+    "approve_loan",
+    "reject_loan",
+    "escalate_to_human"
+  ]
+}

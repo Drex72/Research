@@ -1,0 +1,19 @@
+{
+  "_note": "Language registry only. Add a language name and ISO 639-1 code; Lingua handles recognition. Unsupported Lingua languages fail clearly when selected.",
+  "Arabic": {"code": "ar"},
+  "Bengali": {"code": "bn"},
+  "Chinese": {"code": "zh"},
+  "English": {"code": "en"},
+  "Hausa": {"code": "ha"},
+  "Italian": {"code": "it"},
+  "Javanese": {"code": "jv"},
+  "Korean": {"code": "ko"},
+  "Malay": {"code": "ms"},
+  "Spanish": {"code": "es"},
+  "Swahili": {"code": "sw"},
+  "Tamil": {"code": "ta"},
+  "Thai": {"code": "th"},
+  "Urdu": {"code": "ur"},
+  "Vietnamese": {"code": "vi"},
+  "Yoruba": {"code": "yo"}
+}

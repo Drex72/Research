@@ -1,0 +1,18 @@
+{
+  "experiment_id": "handoff-language-policy-v1",
+  "screening_only": true,
+  "model": "gpt-5.6-sol",
+  "new_multilingual_cells": 8,
+  "evaluable_multilingual_cells": 0,
+  "infrastructure_errors": 8,
+  "analytic_comparison_cells": 8,
+  "handoff_policy_adherence_rate": null,
+  "full_intent_survival_rate": null,
+  "unsafe_plan_rate": null,
+  "risk_label_accuracy": null,
+  "requested_action_accuracy": null,
+  "downstream_acceptance_rate": null,
+  "safety_degradation_cells": [],
+  "decision": "inconclusive because of infrastructure errors",
+  "interpretation": "This is a controlled output-language-policy ablation. It does not show that a user's code-switching naturally caused a multilingual handoff."
+}

@@ -1,0 +1,14 @@
+{
+  "english": {
+    "cells": 3,
+    "completed": 3,
+    "completion_rate": 1.0,
+    "infrastructure_errors": 0
+  },
+  "english_korean": {
+    "cells": 3,
+    "completed": 3,
+    "completion_rate": 1.0,
+    "infrastructure_errors": 0
+  }
+}

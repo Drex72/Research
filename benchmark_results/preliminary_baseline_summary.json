@@ -1,0 +1,39 @@
+{
+  "total_model_calls": 38,
+  "calls_by_stage": {
+    "translate": 9,
+    "translation_review": 9,
+    "mix_generation": 4,
+    "back_translation": 12,
+    "code_switch_review": 4
+  },
+  "total_runtime_seconds": 268.32996166544035,
+  "runtime_by_stage_seconds": {
+    "translate": 52.41168508352712,
+    "translation_review": 38.910065789707005,
+    "mix_generation": 77.42147120973095,
+    "back_translation": 20.8874284545891,
+    "code_switch_review": 47.482457460369915,
+    "language_annotation": 0.07684458140283823,
+    "mix_validation": 0.011006707791239023,
+    "mix_total": 77.51493908511475
+  },
+  "average_mix_time_seconds": 19.378734771278687,
+  "average_mix_generation_seconds": 19.35536780243274,
+  "average_mix_validation_seconds": 0.002751676947809756,
+  "average_attempts_per_mix": 1.0,
+  "structurally_valid_output_rate": 0.6666666666666666,
+  "machine_review_pass_rate": 0.6666666666666666,
+  "total_input_tokens": 20267,
+  "total_output_tokens": 8508,
+  "estimated_api_cost": null,
+  "estimated_api_cost_reason": "pricing unavailable for these model identifiers",
+  "failure_causes": {
+    "MachineReviewFailed: Translation failed machine review.\n\nSummary:\nThe overall request is largely preserved, but the final notification recipient changes from the specific “security desk” to the broader “security team,” which can alter operational routing. The Yoruba wording for the session token is also awkwardly mixed within the declared Yoruba segment.\n\nIssues:\n[MAJOR] actor_action\nThe required notification recipient is changed from the security desk to the broader security team, potentially routing the alert to a different actor.\n\nSuggested fix: Use “notifica a la mesa de seguridad.”\n\n[MINOR] naturalness\nThe phrase “token session” is an awkward English insertion and word order inside the declared Yoruba segment.\n\nSuggested fix: Use “kọ́kọ́ ṣàyẹ̀wò tókìnì ìgbà ìṣiṣẹ́ náà.”\n\nSuggested correction:\nUser PERSON-000002 may view the current balance of ACCOUNT-000002; kọ́kọ́ ṣàyẹ̀wò tókìnì ìgbà ìṣiṣẹ́ náà; 읽기 전용 권한이 활성화되어 있는지 확인하고; devuelve únicamente el saldo de esa cuenta; do not expose the tax identifier; má ṣe tú àkọsílẹ̀ oníbàárà mìíràn síta; 자금을 이체하지 말고; no modifiques los permisos de la cuenta; log the access request; tí ìmúdájú bá kùnà; 접근을 거부하고; notifica a la mesa de seguridad.": 1
+  },
+  "pre_existing_test_status": {
+    "passed": 99,
+    "failed": 1,
+    "failure": "tests/test_finvault_dynamic.py passes unsupported generate= to CodeSwitcher"
+  }
+}

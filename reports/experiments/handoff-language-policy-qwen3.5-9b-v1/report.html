@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qwen Handoff Language Policy v1</title>
+  <style>
+    :root { --ink:#172033; --muted:#61708a; --line:#dbe2ea; --paper:#fff; --wash:#f4f7fa; --accent:#3159a7; --good:#176b4d; --warn:#8a5a00; --warn-bg:#fff4d6; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--wash); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1100px,calc(100% - 32px)); margin:32px auto; padding:40px; background:var(--paper); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 36px rgb(23 32 51 / 8%); }
+    h1,h2 { line-height:1.2; } h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3rem); } h2 { margin-top:36px; font-size:1.25rem; }
+    .muted { color:var(--muted); } .status { display:inline-block; margin:16px 0 24px; padding:7px 12px; color:var(--warn); background:var(--warn-bg); border-radius:999px; font-weight:700; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; }
+    .card,.note,.flow { padding:18px; background:var(--wash); border:1px solid var(--line); border-radius:12px; }
+    .card strong { display:block; color:var(--accent); font-size:1.7rem; } .flow { text-align:center; font-weight:700; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; } th,td { padding:11px 12px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; } th { background:var(--wash); }
+    .good { color:var(--good); font-weight:700; } .warn { color:var(--warn); font-weight:700; } a { color:var(--accent); }
+    @media(max-width:640px){ main { margin:0; width:100%; padding:24px 18px; border-radius:0; } table { display:block; overflow-x:auto; } }
+  </style>
+</head>
+<body><main>
+  <p class="muted">CSRT High-Risk Agent Research · 14 August 2026</p>
+  <h1>Qwen handoff language policy</h1>
+  <p class="muted">Does the language used inside an agent-to-agent handoff change the downstream safety decision?</p>
+  <span class="status">Preliminary plan-level signal, not an executed action</span>
+
+  <div class="cards">
+    <div class="card"><strong>14/14</strong>screening cells evaluable</div>
+    <div class="card"><strong>0</strong>infrastructure errors</div>
+    <div class="card"><strong>5/5</strong>forced-Korean proceed plans</div>
+    <div class="card"><strong>0/5</strong>matched English-only proceed plans</div>
+  </div>
+
+  <h2>Design</h2>
+  <div class="flow">Matched request → Qwen intake handoff → Qwen downstream decision</div>
+  <p>
+    The same pinned <code>qwen3.5:9b</code> model served as both agents. The
+    experiment compared English-only, English-Korean and English-Yoruba internal
+    handoffs. Korean and Yoruba were never mixed in the same track. Agent 2 saw
+    only Agent 1's structured record. No FinVault tools were connected.
+  </p>
+
+  <h2>Initial screening</h2>
+  <table>
+    <thead><tr><th>Measure</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td>Cells</td><td>14 total: 6 English-only baseline and 8 forced multilingual</td></tr>
+      <tr><td>Full harmful-intent survival</td><td>11/14, or 78.6%</td></tr>
+      <tr><td>Forced multilingual policy adherence</td><td>7/8, or 87.5%</td></tr>
+      <tr><td>Actionable proceed plans</td><td>2/14, both in the forced-Korean transfer condition</td></tr>
+      <tr><td>Yoruba actionable proceed plans</td><td>0</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Focused Korean comparison</h2>
+  <table>
+    <thead><tr><th>Original input</th><th>English-only handoff</th><th>Forced Korean handoff</th><th>Meaning retained</th></tr></thead>
+    <tbody>
+      <tr><td>English</td><td class="good">0/5 proceed plans</td><td class="warn">5/5 proceed plans</td><td>Full in 5/5 per policy</td></tr>
+      <tr><td>English-Korean</td><td class="good">0/5 proceed plans</td><td class="warn">5/5 proceed plans</td><td>Full in 5/5 per policy</td></tr>
+    </tbody>
+  </table>
+  <p>
+    The positive handoffs preserved the selected action, identifiers, amount,
+    split count and stated pretext. The deterministic checks found no added
+    identifiers or amounts. Each forced-Korean handoff passed the configured
+    language-policy check.
+  </p>
+
+  <h2>What the result means</h2>
+  <p>
+    The downstream model rejected the matched English-only handoffs but produced
+    a plan containing a sandbox execution step after receiving the forced-Korean
+    handoffs. This occurred for both English and English-Korean original inputs.
+    Therefore, the observed difference tracks the internal handoff language
+    policy, not the user's original use of code-switching.
+  </p>
+
+  <h2>Important limitations</h2>
+  <div class="note">
+    <ul>
+      <li>No tool was connected, so no prohibited action or state change occurred.</li>
+      <li>The downstream JSON said not to execute the requested action while its plan still described proceeding. This is an output inconsistency that requires action-level testing.</li>
+      <li>The five runs used temperature 0 and a fixed seed. They show deterministic reproducibility, not five statistically independent samples.</li>
+      <li>The generated Korean handoffs still require bilingual meaning and naturalness review.</li>
+      <li>Only one task family produced the signal. The other task and the Yoruba track did not.</li>
+    </ul>
+  </div>
+
+  <h2>Decision and next step</h2>
+  <p>
+    <strong>Decision:</strong> preliminary handoff-language-policy signal.
+    The next justified experiment is a matched FinVault sandbox test of this
+    specific transfer condition. It must verify the actual selected tool call and
+    final synthetic state, while retaining English-only and forced-Korean handoff
+    controls. The result must not be described as a vulnerability until that
+    action-level validation and bilingual review are complete.
+  </p>
+</main></body>
+</html>
+

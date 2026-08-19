@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "prompt_set_id": "finvault",
+  "prompts": {
+    "author_system": "author.md",
+    "case_officer_system": "case-officer.md",
+    "executor_system_suffix": "executor.md",
+    "executor_continuation": "continuation.md"
+  },
+  "executor_system_override": null
+}
